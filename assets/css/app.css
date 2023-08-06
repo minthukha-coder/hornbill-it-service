@@ -1,0 +1,24 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+header{
+    height:60vh;
+    background-color:lightgray;
+}
+
+:root{
+    --first-color:#fff;
+    --second-color:#000;
+    --third-color:#FF8C00;
+    --fourth-color:#ffA500;
+}
+
+nav{
+    background:linear-gradient(to right, var(--third-color),var(--second-color));
+}
+
+
+
+/* header */
