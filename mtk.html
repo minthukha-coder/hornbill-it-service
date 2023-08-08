@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hornbill IT Solutions & Services</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/mtk.css">
     <!-- For Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -22,12 +23,12 @@
 
     <nav class=" navbar navbar-expand-lg navbar-dark bg-dark py-1 sticky-top">
         <div class="container">
-          
-            <img src="/assets/images/logo-removebg-preview.png" style = "width:80px;"alt="">
-            <div class = "d-block"> 
-            <a class="navbar-brand border-danger fs-2 " href="#header">Hornbill </a>
-            <small id = "small" class = "d-block text-light">IT Solutions & Services</small>
-        </div>
+
+            <img src="/assets/images/logo-removebg-preview.png" style="width:80px;" alt="">
+            <div class="d-block">
+                <a class="navbar-brand border-danger fs-2 " href="#header">Hornbill </a>
+                <small id="small" class="d-block text-light">IT Solutions & Services</small>
+            </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,7 +48,7 @@
                     <li class="nav-item mx-2">
                         <a href="#testimonial" class="nav-link">Services</a>
                     </li>
-                    
+
                     <li class="nav-item mx-2">
                         <a href="#testimonial" class="nav-link">Blogs</a>
                     </li>
@@ -58,7 +59,8 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
-                        <a href="#loginOffcanvas" data-bs-toggle="offcanvas" class="nav-link border border-1 border-warning rounded-2">Sign in</a>
+                        <a href="#loginOffcanvas" data-bs-toggle="offcanvas"
+                            class="nav-link border border-1 border-warning rounded-2" id="btn">Sign in</a>
                     </li>
                     <!-- <li class="nav-item mx-2">
                         <a href="#registerOffcanvas" class="nav-link" data-bs-toggle="offcanvas" id="signup">Sign Up</a>
@@ -68,11 +70,56 @@
         </div>
     </nav>
 
-    <section id = "about">
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-6"></div>
-                <div class = "col-md-6"></div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header d-flex">
+                        <div class="home-img">
+                            <img src="assets/images/home.jpg" alt="">
+                        </div>
+                        <div class="sub-img">
+                            <img src="assets/images/home.jpg" alt="">
+                        </div>
+                            <div class="circle">
+                                <i class="bi bi-play-circle-fill"></i>
+                           
+                            
+                            <div class = "text" id = "text">
+                                <p>Our Creative Design Services.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h6>About Hornbill</h6>
+                    <div class="heading-line"></div>
+
+                    <h1 class="py-4">Choose <span>The Best </span>IT Service Company</h1>
+
+                    <div id="content" class="d-flex mb-4">
+                        <div class="content-line mt-5"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eum aliquid necessitatibus
+                            maxime adipisci, obcaecati fugiat tempore, rem a sequi cumque, commodi rerum</p>
+                    </div>
+
+                    <hr>
+                    <div class="contact d-flex justify-content-evenly">
+                        <button class="btn btn-warning text-light mt-3" id="btn">Contact Us <i
+                                class="bi bi-arrow-right"></i></button>
+
+                        <i class="bi bi-telephone-fill mt-3" id="phone-icon"></i>
+                        <div class=" text-start">
+                            <h5 class="call">Call for help</h5>
+                            <h5>09 123 456 789</h5>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                </div>
             </div>
         </div>
     </section>
@@ -81,16 +128,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    
+    <script src = "assets/js/mtk.js"></script>
 </body>
 
 </html>
-
-
-<section id = "about">
-    <div class = "container">
-        <div class = "row">
-            <div class = "col-md-6"></div>
-            <div class = "col-md-6"></div>
-        </div>
-    </div>
-</section>
