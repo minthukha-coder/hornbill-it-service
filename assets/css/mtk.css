@@ -107,8 +107,8 @@ header{
     position:absolute;
     left:21rem;
     bottom:11rem;
-    /* animation:zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay:1s,2s; */
+    animation:zoomIn 1s ease forwards, floatImage2 4s ease-in-out infinite;
+    animation-delay:1s,2s;
 }
 
 
@@ -182,6 +182,24 @@ header{
 
     50%{
         transform: translateY(-30px);
+        
+    }
+
+    100%{
+        transform: translateY(0);
+       
+    }
+}
+
+
+@keyframes floatImage2{
+    0%{
+        transform: translateY(0);
+        
+    }
+
+    50%{
+        transform: translateY(30px);
         
     }
 
