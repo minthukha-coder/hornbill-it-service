@@ -1,0 +1,56 @@
+*{font-family: 'PT Sans', sans-serif;
+    
+}
+
+header{
+    min-height:85vh;
+    background-color:lightgray;
+}
+
+:root{
+    --first-color:#fff;
+    --second-color:#000;
+    --third-color:#FF8C00;
+    --fourth-color:#ffA500;
+}
+
+
+/* header */
+#header h2{
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+#header span{
+    color:#F1901D;
+}
+
+#header p{
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#header a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+#header .header-image1{
+    width: 90px;
+    height: 106px;
+    object-fit: cover;
+    object-position: 40% 10%;
+    /* display: block; */
+}
+
+#header .header-image2{
+    width: 165px;
+    height: 220px;
+    object-fit: cover;
+
+}
+
+#header a i{
+    font-size: 20px;
+}
