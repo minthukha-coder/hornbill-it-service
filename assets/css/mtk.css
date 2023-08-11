@@ -3,24 +3,68 @@
     
 }
 
+
 header{
     height:60vh;
-    background-color:lightgray;
+    background-color:#fff;
 }
 
 :root{
     --first-color:#fff;
     --second-color:#000;
-    --third-color:#FF8C00;
-    --fourth-color:;
+    --third-color:#FE4D00;
+    --fourth-color:#FF8C00;
 }
 
 
 /* Nav */
 
-#nav #btn{
+/* #nav #btn{
     width:30px;
+} */
+
+nav #btn-group #btn2{
+    background-color:var(--third-color);
 }
+
+nav .container #navbar li{
+    position:relative;
+}
+
+
+nav .container #navbar li:before{
+    content: "";
+    position:absolute;
+    width:0%;
+    height:3px;
+    background-color:#000;
+    bottom:0;
+    left:0;
+    transition:0.5s;
+    border-radius:5px;
+}
+
+nav .container #navbar li:after{
+    content: "";
+    position:absolute;
+    width:0%;
+    height:3px;
+    background-color:var(--third-color);
+    bottom:0;
+    right:0;
+    transition:0.5s;
+}
+
+nav .container #navbar li:hover:before{
+    width:50%;
+    transform:translateX(100%);
+}
+
+nav .container #navbar li:hover:after{
+    width:50%;
+    transform:translateX(-100%);
+}
+
 
 
 /* about */
@@ -29,11 +73,39 @@ header{
     padding:10% 0;
 }
 
-#about .heading-line{
+.heading-line{
     width:100px;
     height:4px;
     background:linear-gradient(to right, var(--second-color) 50%, var(--third-color) 50% );
 }
+.heading-line2{
+    width:130px;
+    height:4px;
+    background:linear-gradient(to right, var(--second-color) 50%, var(--third-color) 50% );
+}
+
+.heading-line3{
+    width:170px;
+    height:4px;
+    background:linear-gradient(to right, var(--second-color) 50%, var(--third-color) 50% );
+}
+
+.heading-line4{
+    width:70px;
+    height:4px;
+    background-color:var(--third-color);
+    margin-left:10px;
+    margin-top:15px;
+}
+
+.heading-line5{
+    width:230px;
+    height:4px;
+    background:linear-gradient(to right, var(--second-color) 50%, var(--third-color) 50% );
+    margin-bottom:30px;
+}
+
+
 
 #about span{
     color:var(--third-color);
@@ -83,6 +155,10 @@ header{
     color:var(--third-color);
 }
 
+#about .image{
+    position:relative;
+}
+
 
 .home-img img
 {
@@ -96,8 +172,9 @@ header{
     animation:zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay:1s,2s;
     border:.8rem solid var(--third-color);
-    position:relative;
+   
 }
+
 
 .sub-img img{
     width:13em;
@@ -105,15 +182,10 @@ header{
     object-fit:cover; 
     border:0.8rem solid #fff;
     position:absolute;
-    left:21rem;
-    bottom:11rem;
-    animation:zoomIn 1s ease forwards, floatImage2 4s ease-in-out infinite;
-    animation-delay:1s,2s;
+    right:-150px;
+    bottom:0;
+  
 }
-
-
-
-
 
 #about .circle{
     position:relative;
@@ -124,7 +196,6 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-
 }
 
 #about .circle i{
@@ -132,32 +203,195 @@ header{
     color:var(--third-color);
     font-size:90px;
     background-size:cover;
+    
 }
 
 
 #about .text{
     position:absolute;
     width:100%;
-    height:100%;
-    animation:rotateText 10s linear infinite;
+    height:100%; 
+    animation:zoomIn 1s ease forwards,rotateText 10s linear infinite;
     animation-delay:1s;
 }
 
 #about .text span{
     position:absolute;
-    left:49%;
-    top:-18%;
+    left:49.9%;
+    top:-15.5%;
     font-size:1rem;
-    transform-origin:0 70px;
+    transform-origin:0 65px;
 }
+
+
+/* Contact Us */
+
+#contact-us{
+    height:60vh;
+    padding:10% 0;
+
+}
+
+#contact-us #contact{
+    background-color:#fff;
+    width:280px;
+    height:300px;
+    margin:auto 0;
+    animation:zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
+    animation-delay:1s,2s;
+}
+
+#contact-us i{
+    font-size:20px;
+}
+
+#contact-us #building-icon{
+    position:relative;
+}
+
+#contact-us .line-connect{
+    width:143px;
+    height:1.1px;
+    background-color:#000;
+    opacity:0.3;
+    transform:rotate(90deg);
+    position:absolute;
+    bottom:65%;
+    left:-16%;
+}
+
+
+
+#contact-us #contact{
+    border-radius:0 30px 0 0px;
+}
+
+#contact-us #content{
+    width:250px;   
+}
+#contact-us h6{
+    font-size:15px;
+}
+
+#contact-us #content h6{
+    line-height:30px;
+}
+
+#contact-us i{
+    border:3px solid #fff;
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    width:50px;
+    height:30px;
+}
+
+#contact-us #icon2{
+    border:3px solid #fff;
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    width:30px;
+    height:30px;
+}
+
+#connect-content{
+    margin-left:-50px;
+    width:400px;
+    height:380px;
+    background-color:#F5F5DC;
+    border-radius:3px 0 0 40px;
+    z-index:-2;
+}
+
+#connect-content .input{
+    width:80%;
+    padding:15px 20px;
+    border-bottom:2px solid #000;
+    margin-bottom:30px;
+}
+
+#contact-us .form{
+    margin-left:80px;
+}
+
+#contact-us #btn{
+    width:250px;
+    height:40px;
+    background-color:var(--third-color);
+    
+}
+
+
+/* Our Services */
+
+/* #our-services{
+    height:60vh;
+} */
+
+#our-services #card{
+    padding:20px;
+    width:270px;
+    height:250px;
+    margin:50px 0px;
+     border-radius:30px 0px 0 10px;
+    background-color:var(--fourth-color);
+    position:relative;   
+    z-index:2; 
+}
+
+
+#our-services #card .square:before{
+    content: "";
+    width:100%;
+    height:100%;
+    background: linear-gradient(to left,yellow 80% black 20%);
+    backdrop-filter: blur(8px); 
+    border-radius:25px 25px 25px 25px;
+    transform:rotate(0deg);
+    position:absolute;
+    top:100%;
+    left:-100%;
+    transition:0.5s;  
+    z-index:-2;  
+}
+
+#our-services #card:hover .square::before{
+    top:0%;
+    left:0%;
+}
+
+#our-services #card .square{
+    width:80px;
+    height:80px;
+    background-color:var(--third-color);
+    border-radius:25px 25px 25px 25px;
+    transform:rotate(45deg);
+    font-size:80px;
+    position:absolute;
+    top:-43px;
+    left:38%;
+    transition:1s;
+    overflow:hidden;   
+}
+
+#our-services #card i{
+    font-size:38px;
+    position:absolute;
+    top:-26px;
+    left:44.5%;
+    color:#fff;
+}
+
+#our-services #card p{
+    font-size:19px;
+}
+
+
 
 @keyframes rotateText{
     0%{
-        transform:rotate(360deg);
+        transform:rotate(0deg);
     }
 
     100%{
-        transform:rotate(0deg);
+        transform:rotate(360deg);
     }
 }
 
@@ -173,6 +407,18 @@ header{
         opacity:1;
     }
 }
+
+@keyframes swing{
+    0%{
+        transform:rotate(0deg);
+   
+    }
+    100%{
+        transform:rotate(8deg);
+
+    }
+}
+
 
 @keyframes floatImage{
     0%{
@@ -210,4 +456,111 @@ header{
 }
 
 
+@media(max-width:600px){
 
+    /* Nav */
+    nav{
+        margin-bottom:15%;
+    }
+
+    #about{
+        padding-top:10%;
+    }
+
+    #about #about-content{
+        margin:80px 0;
+    }
+
+    #about #about-content h6,h1{
+        text-align:center;
+    }
+
+    #about .circle{
+        position:relative;
+        left:15%;
+        width:60px;
+        height:60px;
+    }
+    
+    #about .circle i{
+        font-size:60px;
+    }
+
+    #about .text{
+        position:absolute;
+        width:100%;
+        height:100%;
+    }
+
+    #about .text span{
+        left:50.5%;
+        top:-39.5%;
+        font-size:1rem;
+        transform-origin:0 55px;
+        
+    }
+
+    #about p{
+        font-size:16px;
+        line-height:30px;
+    }
+    
+    
+
+
+
+    
+    .heading-line3{
+        margin:auto;
+    }
+
+    .heading-line5{
+        margin-bottom:50px;
+    }
+
+
+    #about .content-line{
+        width:130px;
+        height:4px;
+        position:absolute;
+        left:-40px;
+        top:20px;
+    }
+    .home-img img{
+        width:12rem;
+        height:12rem;
+        margin-right: -8px;
+        border:.5rem solid var(--third-color);
+
+    }
+
+    .sub-img img{
+        position:absolute;
+        width:8em;
+        height:4rem;
+        border:0.5rem solid #fff;
+        position:absolute;
+        right:-70px;
+        bottom:0;
+    }
+
+    /* Contact */
+
+    #contact-us #contact{
+        width:280px;
+        height:300px;
+        animation:zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
+        animation-delay:1s,2s;
+        animation-play-state: paused;
+        margin:30px auto;
+
+    }
+
+    #contact-us #connect-content{
+        margin:auto;
+    }
+
+   
+
+
+    }

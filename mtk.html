@@ -17,24 +17,25 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark py-1 sticky-top">
+    <nav class=" navbar navbar-expand-lg navbar-light bg-white py-1 sticky-top">
         <div class="container">
-
-            <img src="/assets/images/logo-removebg-preview.png" style="width:80px;" alt="">
+            <img src="/assets/images/logo2-removebg-preview.png" style="width:80px;" alt="">
             <div class="d-block">
                 <a class="navbar-brand border-danger fs-2 " href="#header">Hornbill </a>
-                <small id="small" class="d-block text-light">IT Solutions & Services</small>
+                <small id="small" class="d-block">IT Solutions & Services</small>
             </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav mx-auto ">
+                <ul class="navbar-nav mx-auto " id = "navbar">
                     <li class="nav-item mx-2">
                         <a href="#about" class="nav-link">Home</a>
                     </li>
@@ -57,10 +58,15 @@
                     </li>
                 </ul>
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="btn-group">
                     <li class="nav-item mx-2">
                         <a href="#loginOffcanvas" data-bs-toggle="offcanvas"
-                            class="nav-link border border-1 border-warning rounded-2" id="btn">Sign in</a>
+                            class="nav-link border border-1 border-warning rounded-2 px-4 mb-2" id="btn">Sign in</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a href="#registerOffcanvas" data-bs-toggle="offcanvas"
+                            class="nav-link border border-1 border-warning rounded-2 px-4 " id="btn2">Sign Up</a>
                     </li>
                     <!-- <li class="nav-item mx-2">
                         <a href="#registerOffcanvas" class="nav-link" data-bs-toggle="offcanvas" id="signup">Sign Up</a>
@@ -73,29 +79,29 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="header d-flex">
+                        <div class = "image">
                         <div class="home-img">
                             <img src="assets/images/home.jpg" alt="">
                         </div>
                         <div class="sub-img">
                             <img src="assets/images/img1.jpg" alt="">
                         </div>
-                            <div class="circle">
-                                <i class="bi bi-play-circle-fill"></i>
-                           
-                            
-                            <div class = "text" id = "text">
+                    </div>
+                        <div class="circle">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <div class="text" id="text">
                                 <p>Our Creative Design Services.</p>
                             </div>
                         </div>
-                        
+
                     </div>
 
                 </div>
-                <div class="col-md-6">
-                    <h6>About Hornbill</h6>
-                    <div class="heading-line"></div>
+                <div class="col-md-5 " id = "about-content">
+                    <h6 style = "font-size:25px;" class = "ms-2">About Hornbill</h6>
+                    <div class="heading-line3 "></div>
 
                     <h1 class="py-4">Choose <span>The Best </span>IT Service Company</h1>
 
@@ -125,11 +131,104 @@
     </section>
 
 
+    <section id="our-services">
+        <div class="container">
+            <h4 class="text-center fs-1">Our Services</h4>
+            <div class="heading-line5 mx-auto "></div>
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                        <h5 class="text-center mt-5">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                        <h5 class="text-center mt-5">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                        <h5 class="text-center mt-5">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                        <h5 class="text-center mt-5">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="text-center" style = "font-size:25px;letter-spacing: 2px;">Contact Us</h5>
+                    <div class="heading-line3 mb-2 mx-auto "></div>
+                    <p class = "text-center">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-lg-4" id="contact">
+                    <div class="d-flex " id="content">
+                        <i class="bi bi-buildings me-3 text-warning" id = "building-icon"></i>
+                        <div class="ms-2 ">
+                            <h5>Pay us a visit</h5>
+                            <h6>47% Alagbado off ijaye ojokoro Inner Street Long Road, Lagos Nigeria</h6>
+                        </div>
+
+                        <div class = "line-connect"></div>
+
+                    </div>
+
+                   
+
+                    <div class="d-flex mt-5">
+                        <i class="bi bi-telephone-fill me-3" id = "icon2"></i>
+                        <div class="ms-2 ">
+                            <h5 class="">Or drop us a line</h5>
+                            <h6>hornbillservice@gmail.com</h6>
+                            <h6 class="mt-2">+234 810 7586 941</h6>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4" id="connect-content">
+                    <h5 class="text-center mt-3 " style = "font-size:25px;letter-spacing:2px;">Connect with us</h5>
+                    <div class="form">
+                        <label for="" class = "mt-2">Name</label>
+                        <div class="input"></div>
+                        <label for="">Email Address</label>
+                        <div class="input"></div>
+                        <label for="">Your Message</label>
+                        <div class="input"></div>
+
+                        <button class = "btn text-light" id = "btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    
-    <script src = "assets/js/mtk.js"></script>
+
+    <script src="assets/js/mtk.js"></script>
 </body>
 
 </html>
