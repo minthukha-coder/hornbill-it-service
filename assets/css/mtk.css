@@ -18,10 +18,6 @@ header{
 
 /* Nav */
 
-/* #nav #btn{
-    width:30px;
-} */
-
 nav #btn-group #btn2{
     background-color:var(--third-color);
 }
@@ -129,6 +125,8 @@ nav .container #navbar li:hover:after{
     
 }
 
+
+
 #about #about-image{
     padding-top:120px;
 }
@@ -175,9 +173,7 @@ nav .container #navbar li:hover:after{
 }
 
 
-.home-img img
-{
-    /* max-width:400px; */
+.home-img img{
     width:25rem;
     height:25rem;
     object-fit:cover;
@@ -187,7 +183,6 @@ nav .container #navbar li:hover:after{
     animation:zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay:1s,2s;
     border:.8rem solid var(--third-color);
-   
 }
 
 
@@ -199,7 +194,6 @@ nav .container #navbar li:hover:after{
     position:absolute;
     right:-150px;
     bottom:0;
-  
 }
 
 #about .circle{
@@ -217,8 +211,7 @@ nav .container #navbar li:hover:after{
     position:absolute;
     color:var(--third-color);
     font-size:90px;
-    background-size:cover;
-    
+    background-size:cover; 
 }
 
 
@@ -233,11 +226,72 @@ nav .container #navbar li:hover:after{
 #about .text span{
     position:absolute;
     left:49.9%;
-    top:-15.5%;
+    top:-17%;
     font-size:1rem;
-    transform-origin:0 65px;
+    transform-origin:0 68px;
 }
 
+
+
+/* Our Services */
+
+#our-services #card{
+    padding:20px;
+    width:270px;
+    height:250px;
+    margin-top:50px;
+    border-radius:60px 10px 10px 10px;
+    /* background-color:var(--fourth-color); */
+    background:#f8b292;
+    position:relative;   
+    z-index:2; 
+}
+
+
+#our-services #card .square:before{
+    content: "";
+    width:100%;
+    height:100%;
+    background: linear-gradient(to left,var(--third-color),#00FFFF);
+    border-radius:25px 25px 25px 25px;
+    transform:rotate(0deg);
+    position:absolute;
+    top:100%;
+    left:-100%;
+    transition:0.5s;  
+    z-index:-2;  
+}
+
+#our-services #card:hover .square::before{
+    top:0%;
+    left:0%;
+}
+
+#our-services #card .square{
+    width:80px;
+    height:80px;
+    background-color:var(--third-color);
+    border-radius:25px 25px 25px 25px;
+    transform:rotate(45deg);
+    font-size:80px;
+    position:absolute;
+    top:-43px;
+    left:38%;
+    transition:1s;
+    overflow:hidden;   
+}
+
+#our-services #card i{
+    font-size:38px;
+    position:absolute;
+    top:-26px;
+    left:44.5%;
+    color:#fff;
+}
+
+#our-services #card p{
+    font-size:19px;
+}
 
 /* Contact Us */
 
@@ -303,7 +357,7 @@ nav .container #navbar li:hover:after{
 #contact-us i{
     border:3px solid #fff;
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-    width:60px;
+    width:40px;
     height:40px;
     text-align:center;
 }
@@ -311,7 +365,7 @@ nav .container #navbar li:hover:after{
 #contact-us #icon2{
     border:3px solid #fff;
     box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
-    width:40px;
+    width:35px;
     height:35px;
     text-align:center;
     font-weight:bold;
@@ -321,17 +375,19 @@ nav .container #navbar li:hover:after{
     padding:30px;
     margin-left:-80px;
     width:500px;
-    height:470px;
+    height:570px;
     background:#fdc0a4;
     border-radius:15px 0px 15px 65px;
-    z-index:-1;
+    /* z-index:-; */
 }
 
 #connect-content .input{
     width:80%;
     padding:15px 20px;
+    border:0;
     border-bottom:2px solid #000;
     margin-bottom:30px;
+    background:#fdc0a4;
 }
 
 #contact-us p{
@@ -353,65 +409,6 @@ nav .container #navbar li:hover:after{
 }
 
 
-/* Our Services */
-
-#our-services #card{
-    padding:20px;
-    width:270px;
-    height:250px;
-    margin:50px 0px;
-    border-radius:60px 10px 10px 10px;
-    /* background-color:var(--fourth-color); */
-    background:#f8b292;
-    position:relative;   
-    z-index:2; 
-}
-
-
-#our-services #card .square:before{
-    content: "";
-    width:100%;
-    height:100%;
-    background: linear-gradient(to left,var(--third-color),#00FFFF);
-    border-radius:25px 25px 25px 25px;
-    transform:rotate(0deg);
-    position:absolute;
-    top:100%;
-    left:-100%;
-    transition:0.5s;  
-    z-index:-2;  
-}
-
-#our-services #card:hover .square::before{
-    top:0%;
-    left:0%;
-}
-
-#our-services #card .square{
-    width:80px;
-    height:80px;
-    background-color:var(--third-color);
-    border-radius:25px 25px 25px 25px;
-    transform:rotate(45deg);
-    font-size:80px;
-    position:absolute;
-    top:-43px;
-    left:38%;
-    transition:1s;
-    overflow:hidden;   
-}
-
-#our-services #card i{
-    font-size:38px;
-    position:absolute;
-    top:-26px;
-    left:44.5%;
-    color:#fff;
-}
-
-#our-services #card p{
-    font-size:19px;
-}
 
 
 
@@ -485,9 +482,7 @@ nav .container #navbar li:hover:after{
     }
 }
 
-@media(max-width:1200px){
-
-   
+    @media(max-width:1200px){
 
     #about #about-container{
         display:flex;
@@ -523,6 +518,13 @@ nav .container #navbar li:hover:after{
         margin:auto;
     }
 
+    #connect-content{
+        width:350px;
+        height:440px;
+    }
+
+  
+
     .heading-line3{
         margin:auto;
     }
@@ -540,14 +542,11 @@ nav .container #navbar li:hover:after{
 
     #our-services #card{
         width:100%;
-        margin-bottom:100%;
+        margin-bottom:10%;
     }
 
 
-
-
-}
-
+    }
 
 @media(max-width:600px){
 
@@ -558,6 +557,10 @@ nav .container #navbar li:hover:after{
 
     #about{
         padding-top:10%;
+    }
+
+    #about #about-container .header{
+        margin:auto;
     }
 
     #about #about-image{
@@ -580,7 +583,7 @@ nav .container #navbar li:hover:after{
 
     #about .circle{
         position:relative;
-        left:15%;
+        left:23%;
         width:60px;
         height:60px;
     }
@@ -600,14 +603,9 @@ nav .container #navbar li:hover:after{
         top:-39.5%;
         font-size:1rem;
         transform-origin:0 55px;
-        
     }
 
-    
-    /* #about .content-line{
-    width:200px;
-    height:4px;
-    } */
+
 
     #about p{
         font-size:18px;
@@ -650,7 +648,21 @@ nav .container #navbar li:hover:after{
         bottom:0;
     }
 
+    /* Our Services */
+    #our-services #card i{
+        position:absolute;
+        top:-24px;
+        left:43.5%;
+  
+    }
+
+    
     /* Contact */
+
+    #contact-us #icon2{
+        height:40px;
+        padding:5px;
+    }
 
     #contact-us #contact{
         width:280px;
@@ -660,19 +672,27 @@ nav .container #navbar li:hover:after{
     }
 
     #contact-us #connect-content{
-        margin:auto;
+        margin:30px auto;
     }
 
     #contact-us .line-connect{
-        width:141px;
+        width:148px;
         height:1.1px;
         position:absolute;
         bottom:55%;
         left:-6%;
     }
 
+    
+    #connect-content{
+    height:550px;
+}
+
+
     #contact-us .form{
-        padding-top:20px;
-        margin-left:50px;
+        padding-top:8px;
+        margin-left:20px;
     }
+
+    
     }
