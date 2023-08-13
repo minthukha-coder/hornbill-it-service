@@ -2,10 +2,6 @@
     font-family: 'PT Sans', sans-serif; 
 }
 
-header{
-    min-height:85vh;
-    /* background-color:lightgray; */
-}
 
 :root{
     --first-color:#fff;
@@ -32,6 +28,12 @@ li::before{
 
 
 /* header */
+
+header{
+    min-height:85vh;
+    
+}
+
 #header h2{
     letter-spacing: 3px;
     font-size: 40px;

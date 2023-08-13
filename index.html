@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hornbill IT Solutions & Services</title>
     <link rel="stylesheet" href="assets/css/app.css">
+    <!-- <link rel="stylesheet" href="assets/css/mtk.css"> -->
     <!-- For Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -14,51 +15,58 @@
 
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
-    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark py-1 sticky-top">
+    <!-- Nav Section -->
+    <nav class=" navbar navbar-expand-lg navbar-light bg-white py-1 sticky-top mb-3">
         <div class="container">
-          
-            <img src="/assets/images/logo-removebg-preview.png" style = "width:80px;"alt="">
-            <div class = "d-block"> 
-            <a class="navbar-brand border-danger fs-2 " href="#header">Hornbill </a>
-            <small id = "small" class = "d-block text-light">IT Solutions & Services</small>
-        </div>
+            <img src="/assets/images/logo2-removebg-preview.png" style="width:90px;" alt="">
+            <div class="ms-2">
+                <a class="navbar-brand border-danger fs-2 " href="#header">Hornbill </a>
+                <small id="small" class="d-block" style = "font-size:17px;">IT Solutions & Services</small>
+            </div>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="navbar-nav mx-auto ">
+                <ul class="navbar-nav mx-auto " id = "navbar">
                     <li class="nav-item mx-2">
-                        <a href="#about" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a href="#service" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a href="#plan" class="nav-link">Courses</a>
                     </li>
 
                     <li class="nav-item mx-2">
-                        <a href="#testimonial" class="nav-link">Services</a>
+                        <a href="#our-services" class="nav-link">Services</a>
                     </li>
-                    
+
                     <li class="nav-item mx-2">
-                        <a href="#testimonial" class="nav-link">Blogs</a>
+                        <a href="#blogs" class="nav-link">Blogs</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="btn-group">
                     <li class="nav-item mx-2">
-                        <a href="#loginOffcanvas" data-bs-toggle="offcanvas" class="nav-link border border-1 border-warning rounded-2">Sign in</a>
+                        <a href="#loginOffcanvas" data-bs-toggle="offcanvas"
+                            class="nav-link border border-1 border-warning rounded-2 px-4 mb-2" id="btn">Sign in</a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a href="#registerOffcanvas" data-bs-toggle="offcanvas"
+                            class="nav-link border border-1 border-warning rounded-2 px-4 text-light" id="btn2">Sign Up</a>
                     </li>
                     <!-- <li class="nav-item mx-2">
                         <a href="#registerOffcanvas" class="nav-link" data-bs-toggle="offcanvas" id="signup">Sign Up</a>
@@ -69,9 +77,490 @@
     </nav>
 
 
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6 pt-3">
+                    <h2 class="fw-bold">Empower Your <span class="multiple-text fw-bold">Business_</span> </h2>
+                    <h2 class="fw-bold">Website with HORNBILL</h2>
+                    <p class="pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nemo error hic architecto corrupti
+                        dignissimos maiores minus sapiente! Quasi voluptates architecto excepturi mollitia rerum id vero
+                        qui aliquid illo ad.</p>
+                    <div class="">
+                        <a href="#" class="border border-1 border-warning bg-warning px-4 py-2 text-light rounded-1 fw-bold">Learn More</a>
+                        <a href="#" class="text-justify px-3 fw-bold">Contact Us <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column">
+                            <img src="assets/images/header1.png" alt="" class="header-image1 mb-2 rounded-2">
+                            <img src="assets/images/header1.png" alt="" class="header-image1 rounded-2 ">
+                        </div>
+                        <div class="">
+                            <img src="assets/images/header2.jpg" alt="" class="header-image2 rounded-2 ps-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row" id = "about-container">
+                <div class="col-lg-7 " id = "about-image">
+                    <div class="header d-flex">
+                        <div class = "image">
+                        <div class="home-img">
+                            <img src="assets/images/home.jpg" alt="">
+                        </div>
+                        <div class="sub-img">
+                            <img src="assets/images/img1.jpg" alt="">
+                        </div>
+                    </div>
+                        <div class="circle">
+                            <i class="bi bi-play-circle-fill"></i>
+                            <div class="text" id="text">
+                                <p>Our Creative Design Services.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class=" col-lg-5 " id = "about-content">
+                    <h6 style = "font-size:25px;" class = "ms-2">About Hornbill</h6>
+                    <div class="heading-line3 "></div>
+
+                    <h1 class="py-4">Choose <span style = "font-weight: bold;">The Best </span>IT Service Company</h1>
+
+                    <div id="content" class="d-flex mb-4">
+                        <div class="content-line mt-5"></div>
+                        <p style = "letter-spacing:1px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eum aliquid necessitatibus
+                            maxime adipisci, obcaecati fugiat tempore, rem a sequi cumque, commodi rerum</p>
+                    </div>
+
+                    <hr>
+                    <div class="contact d-flex ">
+                        <button class="btn btn-warning text-light mt-3 me-5" id="btn">Contact Us <i
+                                class="bi bi-arrow-right"  style = "font-size:20px;"></i></button>
+
+                        <i class="bi bi-telephone-fill mt-3 me-3" id="phone-icon" style = "font-size:25px;"></i>
+                        <div class=" text-start" id = "call-container">
+                            <h5 class="call">Call for help</h5>
+                            <h5 class = "fw-bolder">09 123 456 789</h5>
+                        </div>
+                    </div>
+
+                    <hr style = "margin-top:40px;">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="our-services"0>
+        <div class="container">
+            <h4 class="text-center fs-1 fw-bolder" style = "letter-spacing:2px;">Our Services</h4>
+            <div class="heading-line5 mx-auto mt-4"></div>
+            <div class="row " id = "cards">
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                   
+                        <h5 class="text-center mt-5 fw-bolder">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                   
+                        <h5 class="text-center mt-5 fw-bolder">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                   
+                        <h5 class="text-center mt-5 fw-bolder">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 ">
+                    <div id="card" class = "mx-auto ">
+                        
+                        <div class = "square"></div>
+                        <i class="fa-solid fa-display"></i>
+                   
+                        <h5 class="text-center mt-5 fw-bolder">UI/ UX Design</h5>
+                        <div class="heading-line4 mx-auto"></div>
+                        <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum </p>
+                    </div>
+                </div>    
+          
+        </div>
+    </section>
+
+    <!-- Test Section -->
+    <section id="testimonial" class="container p-5 mb-5">
+        <div class="row">
+          <div class="col-md-5 text-center mb-3">
+            <h4 class="fw-bold">Testimonials</h4>
+            <div class="d-flex head-line justify-content-center">
+              <div class="heading-line7"></div>
+              <div class="heading-line8"></div>
+            </div>
+            <p class="fw-bold fs-5">See how are clients feel about us.</p>
+          </div>
+          <div class="col-md-7 d-flex justify-content-between align-items-center">
+            <div
+              class="card border border-1 border-secondary py-4"
+              style="width: 85%"
+              id="main-card"
+            >
+              <div class="card-header border-0 bg-transparent">
+                <img
+                  src="assets/images/logo-removebg-preview.png"
+                  alt=""
+                  style="height: 60px; width: 60px; border-radius: 50%"
+                  class="img-fluid"
+                />
+                <p>
+                  Working with the PETRONG team has been a huge successful!
+                  They're good people who care deeply about our bussiness!
+                </p>
+              </div>
+              <div class="card-body">
+                <h6>John Doe</h6>
+                <div class="d-flex justify-content-between">
+                  <h6>CEO</h6>
+                  <h6>Leonard Technologies</h6>
+                </div>
+              </div>
+            </div>
+  
+            <div class="" style="width: 50px; padding-left: 70px">
+              <div
+                class="border border-2 border-warning rounded-circle mb-3 text-warning fs-5"
+                style="
+                  width: 45px;
+                  height: 45px;
+                  line-height: 45px;
+                  text-align: center;
+                "
+              >
+                <i class="bi bi-chevron-up"></i>
+              </div>
+  
+              <div
+                class="bg-danger rounded-circle bg-black border-dark text-warning fs-5"
+                style="
+                  width: 45px;
+                  height: 45px;
+                  line-height: 45px;
+                  text-align: center;
+                "
+              >
+                <i class="bi bi-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container p-5">
+          <div class="row">
+            <div class="col-lg-7">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item border-0 border-bottom">
+                      <h2 class="accordion-header">
+                        <button id = "title" class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                         Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam neque, sed non consequuntur vero tenetur quis adipisci, a iusto rem et cum ex inventore. Soluta cupiditate eos laborum nesciunt.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item  border-0 border-bottom">
+                      <h2 class="accordion-header">
+                        <button id = "title" class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime velit totam in. Est voluptas laboriosam in minus rem similique recusandae at voluptates molestias! Vel a quas, illo tempore alias repudiandae.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item  border-0 border-bottom">
+                      <h2 class="accordion-header">
+                        <button id = "title" class="accordion-button collapsed fw-bold fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Lorem ipsum dolor sit amet?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, laudantium? Quia, neque saepe! Nisi fugiat provident eveniet iste a non rem sequi nobis tempore consequuntur consequatur quo, architecto voluptate aperiam?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div id="faq-content" class="col-lg-5">
+                <div class="text-center">
+                    <h4 class="mb-3 fw-bold">FAQ</h4>
+                    <div class="heading-line6 mx-auto mb-3"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="Blogs" class="container p-5">
+        <h2 class="text-center fs-1">Latest Blogs</h2>
+        <div class="d-flex justify-content-center mb-5">
+          <div class="heading-line01"></div>
+          <div class="heading-line02"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 mb-5 p-0">
+              <div class="card-header border-0 bg-transparent">
+                <img
+                  src="assets/images/client test.png"
+                  class="img-fluid rounded-0"
+                  alt=""
+                />
+                <h4 class="card-title text-uppercase fs-5 mt-2">Web Design</h4>
+                <div class="sub-heading-line"></div>
+              </div>
+  
+              <div class="card-body">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci inventore,
+                  doloribus, nemo quod laborum doloremque totam....
+                  <a href="#" class="text-decoration-none text-warning"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-0">
+            <div class="card border-0 mb-5">
+              <div class="card-header border-0 bg-transparent">
+                <img
+                  src="assets/images/client test.png"
+                  class="img-fluid rounded-0"
+                  alt=""
+                />
+                <h4 class="card-title text-uppercase fs-5 mt-2">Web Design</h4>
+                <div class="sub-heading-line"></div>
+              </div>
+              <div class="card-body">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci inventore,
+                  doloribus, nemo quod laborum doloremque totam....
+                  <a href="#" class="text-decoration-none text-warning"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 p-0">
+            <div class="card border-0">
+              <div class="card-header border-0 bg-transparent">
+                <img
+                  src="assets/images/client test.png"
+                  class="img-fluid rounded-0"
+                  alt=""
+                />
+                <h4 class="card-title text-uppercase fs-5 mt-2">Web Design</h4>
+                <div class="sub-heading-line"></div>
+              </div>
+              <div class="card-body">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci inventore,
+                  doloribus, nemo quod laborum doloremque totam....
+                  <a href="#" class="text-decoration-none text-warning"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-us" class = "mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5 class="text-center fw-bolder my-3" style = "font-size:25px;letter-spacing: 2px;">Contact Us</h5>
+                    <div class="heading-line3 mb-2 mx-auto "></div>
+                    <p class = "text-center fw-bolder mx-auto">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-lg-4" id="contact">
+                    <div class="d-flex " id="content">
+                        <i class="bi bi-buildings me-3 text-warning" id = "building-icon"></i>
+                        <div class="ms-2 ">
+                            <h5 class = "fw-bolder ">Pay us a visit</h5>
+                            <h6>471, Alagbado off ijaye ojokoro Inner Street Long Road,<br> Lagos Nigeria</h6>
+                        </div>
+
+                        <div class = "line-connect"></div>
+
+                    </div>
+
+                   
+
+                    <div class="d-flex mt-5">
+                        <i class="bi bi-telephone-fill me-3" id = "icon2"></i>
+                        <div class="ms-2 ">
+                            <h5 class="fw-bolder ">Or drop us a line</h5>
+                            <h6>hornbillservice@gmail.com</h6>
+                            <h6 class="mt-2" style = "line-height:50px;">+234 810 7586 941</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" id="connect-content">
+                    <h5 class="text-center mt-3 fw-bolder " style = "font-size:25px;letter-spacing:1px;">Connect with us</h5>
+                    <div class="form">
+                        <div class = "">
+                            <label for="" class = "d-block mt-3 mb-2 fw-bolder">Name</label>
+                            <input type="text" class = "input ">
+                            <label for="" class = "fw-bolder mb-2">Email Address</label>
+                            <input type="text" class = "input" >
+                            <label for="" class = "fw-bolder mb-2">Your Message</label>
+                            <input type="text" class = "input">
+    
+                            <button class = "btn text-light" id = "btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" class = "mt-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <img src="assets/images/logo1.jpg" alt="" class="img-fluid mb-2" style="width: 80px;">
+                    <h4 class="fw-bold">Hornbill</h4>
+                    <p>We growing up your business to the international scale.</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-around lh-lg">
+                    <div>
+                        <h6 class="fw-bolder" style="letter-spacing: 2px;">COMPANY</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#header"></a>Home</li>
+                            <li><a href="#about"></a>About</li>
+                            <li><a href="#our-services"></a>Services</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="fw-bolder" style="letter-spacing: 2px;">RESOURCES</h6>
+                        <ul class="list-unstyled">
+                            <li>Documentation</li>
+                            <li>Papers</li>
+                            <li>Press Conferences</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="fw-bolder" style="letter-spacing: 2px;">LEGAL</h6>
+                        <ul class="list-unstyled">
+                            <li>Terms of Service</li>
+                            <li>Privacy Policy</li>
+                            <li>Cookies Policy</li>
+                            <li>Data Processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-black" style="width: 100%;"></div>
+        </div>
+    </section>
+
+    <!-- Foote Copy Right -->
+    <footer>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&copy;2023 All rights reserved.| Designed by Htet Nandar</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <a href="#" class="text-black fs-5 pe-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-black fs-5 pe-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-black fs-5"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      
+
+    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    
+    <script src = "assets/js/app.js"></script>
 </body>
 
 </html>
