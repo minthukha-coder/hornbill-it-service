@@ -488,9 +488,9 @@ nav .container #navbar li:hover:after{
 
 @media(max-width:1400px){
     
-    #connect-content{
+    /* #connect-content{
       margin:auto;
-    }
+    } */
 
 }
 
@@ -563,6 +563,15 @@ nav .container #navbar li:hover:after{
     }
 
 
+    }
+
+    @media(max-width:800px){
+        #our-services #card i{
+            position:absolute;
+            top:-24px;
+            left:42%;
+      
+        }
     }
 
 @media(max-width:600px){
@@ -670,7 +679,6 @@ nav .container #navbar li:hover:after{
         position:absolute;
         top:-24px;
         left:43.5%;
-  
     }
 
     
@@ -712,4 +720,20 @@ nav .container #navbar li:hover:after{
     }
 
     
+    }
+
+    @media(min-width:400px) and (max-width:500px){
+        #our-services #card i{
+            position:absolute;
+            top:-24px;
+            left:42.5%;
+        }
+    }
+
+    @media(min-width:500px) and (max-width:600px){
+        #our-services #card i{
+            position:absolute;
+            top:-24px;
+            left:42%;
+        }
     }
