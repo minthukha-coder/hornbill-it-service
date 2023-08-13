@@ -390,6 +390,10 @@ nav .container #navbar li:hover:after{
     background:#fdc0a4;
 }
 
+#connect-content .input:focus{
+    border-radius:10px;
+}
+
 #contact-us p{
     font-size:20px;
 }
@@ -482,6 +486,15 @@ nav .container #navbar li:hover:after{
     }
 }
 
+@media(max-width:1400px){
+    
+    #connect-content{
+      margin:auto;
+    }
+
+}
+
+
     @media(max-width:1200px){
 
     #about #about-container{
@@ -520,7 +533,11 @@ nav .container #navbar li:hover:after{
 
     #connect-content{
         width:350px;
-        height:440px;
+        height:560px;
+    }
+
+    #contact-us .form{
+        margin-left:15px;
     }
 
   
@@ -686,7 +703,7 @@ nav .container #navbar li:hover:after{
     
     #connect-content{
     height:550px;
-}
+    }
 
 
     #contact-us .form{
