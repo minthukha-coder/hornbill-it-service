@@ -30,7 +30,7 @@ li::before{
 /* header */
 
 header{
-    min-height:85vh;
+    height:85vh;
     
 }
 
