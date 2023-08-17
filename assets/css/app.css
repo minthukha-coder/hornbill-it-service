@@ -719,6 +719,10 @@ header {
     margin-bottom: 15%;
   }
 
+  nav #horn {
+    letter-spacing: 11px !important;
+  }
+
   /* Header */
 
   #header .container {
