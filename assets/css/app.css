@@ -59,11 +59,7 @@ nav .container #navbar li:hover:after {
 /* header */
 
 header {
-  height: 70vh;
-}
-
-#header .container {
-  padding-top: 100px;
+  min-height: 85vh;
 }
 
 #header h2 {
@@ -72,7 +68,7 @@ header {
 }
 
 #header span {
-  color: var(--third-color);
+  color: var(--fourth-color);
 }
 
 #header p {
@@ -82,7 +78,7 @@ header {
 
 #header a {
   text-decoration: none;
-  color: var(--third-color);
+  color: var(--second-color);
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -205,7 +201,6 @@ header {
   height: 55px;
   line-height: 55px;
   text-align: center;
-  margin-left: 10%;
   color: var(--third-color);
   background-color: #fff;
   border: 2px solid lightgray;
@@ -888,5 +883,23 @@ header {
 
   #contact-us {
     margin-bottom: 20% 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #faq #column {
+    flex-direction: column-reverse;
+  }
+
+  #footer .middle {
+    text-align: center;
+  }
+
+  footer .middle {
+    text-align: center;
+  }
+
+  footer .icons {
+    justify-content: center;
   }
 }
