@@ -106,7 +106,7 @@ header {
 /* about */
 
 #about {
-  padding: 120px 0;
+  margin-bottom: 80px;
 }
 
 .heading-line {
@@ -129,7 +129,7 @@ header {
 }
 
 .heading-line3 {
-  width: 170px;
+  width: 180px;
   height: 6px;
   background: linear-gradient(
     to right,
@@ -727,7 +727,7 @@ header {
   /* About */
 
   #about {
-    padding-top: 80%;
+    padding-top: 20%;
   }
 
   #about #about-container .header {
@@ -752,8 +752,7 @@ header {
     text-align: center;
   }
 
-  /* #about .circle {
-    position: relative;
+  #about .circle {
     width: 60px;
     height: 60px;
   }
@@ -769,44 +768,10 @@ header {
   }
 
   #about .text span {
-    left: 50.5%;
-    top: -39.5%;
-    font-size: 1rem;
-    transform-origin: 0 55px;
-  } */
-
-  #about .circle {
-    position: relative;
-    left: 10%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #about .circle i {
     position: absolute;
-    color: var(--third-color);
-    font-size: 80px;
-    background-size: cover;
-  }
-
-  #about .text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: zoomIn 1s ease forwards, rotateText 10s linear infinite;
-    animation-delay: 1s;
-  }
-
-  #about .text span {
-    position: absolute;
-    left: 49.9%;
-    top: -17%;
-    font-size: 1rem;
-    transform-origin: 0 66px;
+    left: 51%;
+    top: -50%;
+    transform-origin: 0px 60px;
   }
 
   #about p {
