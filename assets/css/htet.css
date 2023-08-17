@@ -22,21 +22,18 @@
   #nav small {
     position: relative;
     top: -10px;
-  }
-  /* navigation end */
-  
-  /* header */
-  
-  header {
-    min-height: 85vh;
-    /* border: 1px solid red; */
-  }
-  
-  #header .container {
-    padding-top: 100px;
-  }
-  
-  #header h2 {
+}
+/* navigation end */
+
+
+/* header */
+
+header{
+    min-height:85vh;
+    
+}
+
+#header h2{
     letter-spacing: 3px;
     font-size: 40px;
   }
