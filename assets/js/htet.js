@@ -1,6 +1,6 @@
 // header js
 const typed = new Typed('.multiple-text',{
-    strings : ['Business','eCommerce','Personal','Technology','Entertainment'],
+    strings : ['Business','eCommerce','Personal','Technology'],
     typeSpeed : 100,
     backSpeed : 100,
     backDelay : 1000,
