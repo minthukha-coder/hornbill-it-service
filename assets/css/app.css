@@ -193,7 +193,6 @@ header {
   height: 50px;
   padding: 0px 10px;
   background-color: var(--third-color);
-  font-size: 17px;
 }
 
 #about #call-main #phone-icon {
@@ -723,11 +722,16 @@ header {
     letter-spacing: 11px !important;
   }
 
+  nav #btn {
+    margin-top: 5px;
+  }
+
   /* Header */
 
   #header .container {
     padding-top: 0 !important;
   }
+
   /* About */
 
   #about {
@@ -747,10 +751,6 @@ header {
     margin: 80px 0;
   }
 
-  #about #about-content #btn i {
-    display: none;
-  }
-
   #about #about-content h6,
   h1 {
     text-align: center;
@@ -762,7 +762,7 @@ header {
   }
 
   #about .circle i {
-    font-size: 60px;
+    font-size: 68px;
   }
 
   #about .text {
