@@ -68,13 +68,13 @@ header {
 }
 
 /* Testimonail Section  */
-#testimonial .heading-line3 {
+#testimonial .heading-line01 {
   width: 85px;
   height: 5px;
   /* margin: auto; */
   background-color: var(--second-color);
 }
-#testimonial .heading-line4 {
+#testimonial .heading-line02 {
   width: 85px;
   height: 5px;
   /* margin: auto; */
