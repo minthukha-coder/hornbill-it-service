@@ -379,11 +379,11 @@ header {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--first-color);
-  color: var(--third-color);
+  background-color: var(--first-color) !important;
+  color: var(--third-color) !important;
 }
 #faq .card-header {
-  color: var(--fourth-color);
+  color: var(--fourth-color) !important;
 }
 
 .accordion-button:focus {
