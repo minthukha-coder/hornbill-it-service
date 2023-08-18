@@ -575,6 +575,13 @@ header {
   z-index: 2;
 }
 
+/* Footer Start */
+#footer #link a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+/* Footer End */
+
 @keyframes rotateText {
   0% {
     transform: rotate(0deg);
