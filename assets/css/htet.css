@@ -91,11 +91,11 @@ header{
   
   /* faq start */
   .accordion-button::after{
-    background-image: url('../images/Mediamodifier-Design.svg');
+    background-image: url('../images/ic_baseline-plus.svg') ;
   }
 
   .accordion-button:not(.collapsed)::after {
-    background-image: url('../images/maki_cross.svg');
+    background-image:url('../images/maki_cross1.svg');
   }
 
   .accordion-button:not(.collapsed){
@@ -122,9 +122,14 @@ header{
   /* faq end */
 
   /* footer start */
-  #footer #link a{
+  #footer .link a{
     text-decoration: none;
     color: var(--second-color);
+  }
+
+  #footer .line{
+    border: 1px solid rgb(238, 236, 236);
+    width: 100%;
   }
    /* footer end */
 
