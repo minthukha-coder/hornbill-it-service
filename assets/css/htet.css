@@ -120,6 +120,14 @@ header{
     );
   }
   /* faq end */
+
+  /* footer start */
+  #footer #link a{
+    text-decoration: none;
+    color: var(--second-color);
+  }
+   /* footer end */
+
   
   @media (max-width: 576px) {
     #faq #column{
