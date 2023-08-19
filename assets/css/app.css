@@ -644,6 +644,10 @@ header {
 
 /* Media Query */
 @media (max-width: 1400px) {
+  #our-services .card {
+    height: 240px;
+  }
+
   #connect-content {
     width: 400px;
     height: 500px;
