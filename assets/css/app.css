@@ -106,7 +106,22 @@ header {
 
 #header #btn1 {
   background-color: var(--third-color);
+  padding: 8px 20px;
+  border-radius: 4px;
 }
+
+#header #btn2 {
+  transition: 0.5s;
+  padding: 6px 20px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#header #btn2:hover {
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+
 /* header end */
 
 /* about */
@@ -378,11 +393,11 @@ header {
 
 /* faq start */
 .accordion-button::after {
-  background-image: url("../images/Mediamodifier-Design.svg") !important;
+  background-image: url("../images/ic_baseline-plus.svg") !important;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../images/maki_cross.svg") !important;
+  background-image: url("../images/maki_cross1.svg") !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -426,7 +441,7 @@ header {
 #Blogs .heading-line02 {
   width: 150px;
   height: 5px;
-  background-color: var(--fourth-color);
+  background-color: var(--third-color);
   margin: 0 0 20px;
 }
 
@@ -452,7 +467,7 @@ header {
   width: 60px;
   height: 3px;
   /* margin: left; */
-  background-color: var(--fourth-color);
+  background-color: var(--third-color);
   /* margin-bottom: 15px; */
 }
 #Blogs .card-header p {
@@ -568,7 +583,7 @@ header {
 
 #contact-us #btn {
   margin-top: 10px;
-  width: 270px;
+  width: 230px;
   height: 50px;
   background-color: var(--third-color);
   opacity: 1;
