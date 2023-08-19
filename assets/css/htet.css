@@ -78,7 +78,23 @@ header{
 
   #header #btn1{
     background-color: var(--third-color);
+    padding:8px 20px;
+    border-radius: 4px;
   }
+
+  #header #btn2{
+    transition: 0.5s;
+    padding:6px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+  }
+ 
+
+  #header #btn2:hover{
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+  }
+
 /* 
   @media (max-width:400px) {
     #header #header-title{
