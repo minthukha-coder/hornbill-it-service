@@ -11,6 +11,9 @@
 
 /* Nav */
 
+nav #btn-group #btn {
+  border: 1px solid var(--third-color);
+}
 nav #btn-group #btn2 {
   background-color: var(--third-color);
 }
@@ -230,7 +233,7 @@ header {
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 1s, 2s;
-  border: 0.8rem solid var(--third-color);
+  border: 0.4rem solid var(--third-color);
 }
 
 .sub-img img {
@@ -292,7 +295,7 @@ header {
   padding: 20px;
   height: 220px;
   margin-top: 50px;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 10px 10px 10px 10px;
   /* background-color:var(--fourth-color); */
   transition: 0.5s;
@@ -341,7 +344,7 @@ header {
 
 #our-services .card:hover p {
   opacity: 1;
-  height: 30px;
+  /* height: 30px; */
 }
 
 /* Services end */
@@ -365,6 +368,10 @@ header {
 
 #testimonial #main-card {
   box-shadow: 50px 60px 0 rgb(223, 210, 210);
+}
+
+#testimonial #btn {
+  background-color: var(--third-color);
 }
 
 /* Test End */
@@ -400,12 +407,6 @@ header {
   );
 }
 /* faq end */
-
-@media (max-width: 800px) {
-  #faq-content {
-    margin-top: 50px;
-  }
-}
 
 /* Latest Blogs */
 #Blogs h2 {
@@ -467,7 +468,7 @@ header {
 #contact-us #contact {
   padding: 40px;
   background-color: #fff;
-  width: 380px;
+  width: 330px;
   height: 370px;
   margin: auto 0;
   animation: zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
@@ -499,7 +500,7 @@ header {
 }
 
 #contact-us #contact h5 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 #contact-us #content {
@@ -535,8 +536,8 @@ header {
 #connect-content {
   padding: 30px;
   margin-left: -80px;
-  width: 500px;
-  height: 570px;
+  width: 420px;
+  height: 500px;
   background: #fdc0a4;
   border-radius: 15px 0px 15px 65px;
   /* z-index:-; */
@@ -544,17 +545,16 @@ header {
 
 #connect-content .input {
   width: 80%;
-  padding: 15px 20px;
+  padding: 10px 20px;
   border: 0;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   margin-bottom: 30px;
   background: #fdc0a4;
 }
 
 #connect-content .input:focus {
-  border-radius: 10px 10px 0 0;
   outline: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 #contact-us p {
@@ -563,16 +563,17 @@ header {
 
 #contact-us .form {
   padding-top: 20px;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 
 #contact-us #btn {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 270px;
   height: 50px;
   background-color: var(--third-color);
   opacity: 1;
   z-index: 2;
+  border: none;
 }
 
 /* Footer Start */
@@ -644,7 +645,13 @@ header {
 /* Media Query */
 @media (max-width: 1400px) {
   #connect-content {
-    margin: auto;
+    width: 400px;
+    height: 500px;
+  }
+
+  #contact-us .form {
+    padding-top: 10px;
+    margin-left: 70px;
   }
 }
 
@@ -676,20 +683,10 @@ header {
   }
 
   #contact-us #contact {
-    margin: 30px auto;
-  }
-
-  #contact-us #connect-content {
-    margin: auto;
-  }
-
-  #connect-content {
-    width: 350px;
-    height: 560px;
-  }
-
-  #contact-us .form {
-    margin-left: 15px;
+    padding: 40px;
+    background-color: #fff;
+    width: 310px;
+    height: 370px;
   }
 
   .heading-line3 {
@@ -709,6 +706,31 @@ header {
   #our-services #card {
     width: 100%;
     margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #contact-us #contact {
+    display: block;
+    padding: 40px;
+    background-color: #fff;
+    width: 310px;
+    height: 390px;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq-content {
+    margin-top: 50px;
+  }
+
+  #contact-us #contact {
+    margin: auto;
+    animation-play-state: paused;
+  }
+
+  #connect-content {
+    margin: auto;
   }
 }
 
@@ -801,7 +823,7 @@ header {
   .home-img img {
     width: 11rem;
     height: 11rem;
-    border: 0.5rem solid var(--third-color);
+    border: 0.3rem solid var(--third-color);
     margin: 0;
   }
 
@@ -842,7 +864,8 @@ header {
   }
 
   #connect-content {
-    height: 550px;
+    width: 350px;
+    height: 480px;
   }
 
   #contact-us .form {
