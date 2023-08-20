@@ -665,13 +665,13 @@ header {
 
   #connect-content {
     width: 400px;
-    height: 500px;
+    /* height: 500px; */
   }
 
-  #contact-us .form {
+  /* #contact-us .form {
     padding-top: 10px;
     margin-left: 70px;
-  }
+  } */
 }
 
 @media (max-width: 1200px) {
@@ -680,9 +680,9 @@ header {
     flex-direction: column;
   }
 
-  #about #about-image {
+  /* #about #about-image {
     margin: auto;
-  }
+  } */
 
   #about #about-content {
     margin: auto;
@@ -730,9 +730,6 @@ header {
 
 @media (max-width: 1000px) {
   #contact-us #contact {
-    display: block;
-    padding: 40px;
-    background-color: #fff;
     width: 310px;
     height: 390px;
   }
@@ -785,6 +782,7 @@ header {
   }
 
   #about #about-image {
+    margin: auto;
     padding-top: 50px;
   }
 
