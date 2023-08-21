@@ -365,6 +365,7 @@ header {
 /* Services end */
 
 /* Testimonail Section  */
+
 #testimonial .heading-line7 {
   width: 85px;
   height: 5px;
@@ -387,6 +388,145 @@ header {
 
 #testimonial #btn {
   background-color: var(--third-color);
+}
+
+/* Testimonail Section  */
+#testimonial .heading-line01 {
+  width: 85px;
+  height: 5px;
+  /* margin: auto; */
+  background-color: var(--second-color);
+}
+#testimonial .heading-line02 {
+  width: 85px;
+  height: 5px;
+  /* margin: auto; */
+  background-color: var(--fourth-color);
+}
+#testimonial .head-line {
+  margin-bottom: 10px;
+}
+
+#testimonial #main-card {
+  box-shadow: 3px 2px 5px black;
+  /* background-color: red; */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+.button-box .btn1 {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  background-color: red;
+}
+.button-box .btn2 {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+/* .card-header {
+  background-color: aqua;
+} */
+
+.card-header .customer-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.box {
+  width: 500px;
+  height: 300px;
+
+  position: relative;
+
+  /* padding: 50px; */
+
+  /* background-color: rgb(128, 143, 138); */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  /* background-color: aqua; */
+
+  /* position: relative; */
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  /* background: #36d406; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  transform: rotate(-90deg);
+  /* left: 19px; */
+  padding: 20px;
+  /* margin-right: 3px; */
+}
+
+.swiper-button-prev {
+  transform: rotate(-90deg);
+  /* margin-top: 100px; */
+  /* left: 15px; */
+  margin-left: 10px;
+}
+
+#testimonial .swiper-button-next:after {
+  color: #fff;
+}
+#testimonial .swiper-button-prev:after {
+  color: #fff;
+}
+
+.button-box .btn1 {
+  position: absolute;
+  top: 50%;
+  right: -130px;
+  border: none;
+}
+
+.button-box .btn2 {
+  position: absolute;
+  top: 80%;
+  right: -130px;
+  border: none;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(211, 88, 88); */
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
 /* Test End */
@@ -412,6 +552,7 @@ header {
   border-color: white !important;
   box-shadow: none !important;
 }
+
 #faq .heading-line6 {
   width: 140px;
   height: 5px;
@@ -854,6 +995,69 @@ header {
     bottom: 0;
   }
 
+  /* Testimonial */
+  #testimonial .box {
+    width: 380px;
+    height: 300px;
+  }
+
+  #testimonial.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  #testimonial .card-body {
+    padding: 5px;
+  }
+
+  #testimonial .button-box .btn1 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  #testimonial .button-box .btn2 {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: green;
+  }
+
+  #testimonial .swiper-button-next {
+    transform: rotate(-90deg);
+    /* left: 17px; */
+    color: #fff;
+    /* padding: 20px; */
+  }
+
+  #testimonial .swiper-button-prev {
+    transform: rotate(-90deg);
+    /* margin-top: 100px; */
+    color: #fff;
+    left: 8px;
+  }
+
+  #testimonial .swiper-button-next:after {
+    font-size: 30px;
+  }
+  #testimonial .swiper-button-prev:after {
+    font-size: 30px;
+  }
+
+  .button-box .btn1 {
+    position: absolute;
+    right: -115px;
+  }
+
+  .button-box .btn2 {
+    position: absolute;
+    right: -115px;
+  }
+
   /* Contact */
 
   #contact-us #icon2 {
@@ -910,5 +1114,41 @@ header {
 
   footer .icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  #testimonial .box {
+    width: 320px;
+    height: 300px;
+  }
+  #testimonial.shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  #testimonial .box {
+    width: 250px;
+    height: 300px;
+  }
+  #testimonial .card p {
+    font-size: 13px;
+  }
+  #testimonial .card h6 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  #testimonial .box {
+    width: 200px;
+    height: 300px;
+  }
+  #testimonial .card h6 {
+    font-size: 12px;
   }
 }

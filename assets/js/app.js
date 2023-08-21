@@ -12,3 +12,11 @@ const typed = new Typed('.multiple-text',{
     backDelay : 1000,
     loop : true
 })
+
+var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
