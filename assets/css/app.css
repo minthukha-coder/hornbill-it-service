@@ -677,7 +677,7 @@ header {
 #connect-content {
   padding: 30px;
   margin-left: -80px;
-  width: 420px;
+  width: 400px;
   height: 500px;
   background: #fdc0a4;
   border-radius: 15px 0px 15px 65px;
@@ -685,7 +685,7 @@ header {
 }
 
 #connect-content .input {
-  width: 80%;
+  width: 90%;
   padding: 10px 20px;
   border: 0;
   border-bottom: 1px solid #000;
@@ -901,24 +901,23 @@ header {
     padding-top: 20%;
   }
 
-  #about #about-container .header {
+  /* #about #about-container .header {
     display: flex;
     justify-content: flex-start !important;
-  }
+  } */
 
   #about #about-image {
-    margin: auto;
     padding-top: 50px;
   }
 
   #about #about-content {
     margin: 80px 0;
   }
-
+  /* 
   #about #about-content h6,
   h1 {
     text-align: center;
-  }
+  } */
 
   #about .circle {
     width: 60px;
