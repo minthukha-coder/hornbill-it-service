@@ -9,6 +9,10 @@
   --fourth-color: #ff8c00;
 }
 
+.main {
+  overflow: hidden;
+}
+
 /* Nav */
 
 nav #btn-group #btn {
@@ -245,9 +249,9 @@ header {
   object-fit: cover;
   border-radius: 50%;
   margin-right: -20%;
-  opacity: 0;
-  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-  animation-delay: 1s, 2s;
+  /* opacity: 0; */
+  animation: floatImage 4s ease-in-out infinite;
+  animation-delay: 1s;
   border: 0.4rem solid var(--third-color);
 }
 
@@ -734,7 +738,7 @@ header {
   }
 }
 
-@keyframes zoomIn {
+/* @keyframes zoomIn {
   0% {
     transform: scale(0);
     opacity: 0;
@@ -744,7 +748,7 @@ header {
     transform: scale(1);
     opacity: 1;
   }
-}
+} */
 
 @keyframes swing {
   0% {
