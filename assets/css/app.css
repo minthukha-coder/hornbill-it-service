@@ -79,7 +79,7 @@ header {
 }
 
 #header p {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 2px;
 }
 
@@ -115,11 +115,32 @@ header {
 }
 
 #header #btn2 {
+  position: relative;
+  color: var(--third-color);
   transition: 0.5s;
   padding: 6px 20px;
   border-radius: 4px;
   border: 1px solid transparent;
+  /* border: 1px solid var(--third-color);
+  overflow: hidden; */
 }
+
+/* #header #btn2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(40px);
+  transition: 0.5s;
+}
+
+#header #btn2:hover::before {
+  transform: translateY(0px);
+} */
 
 #header #btn2:hover {
   color: var(--third-color);
