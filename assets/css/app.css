@@ -426,7 +426,7 @@ header {
   width: 85px;
   height: 5px;
   /* margin: auto; */
-  background-color: var(--fourth-color);
+  background-color: var(--third-color);
 }
 #testimonial .head-line {
   margin-bottom: 10px;
