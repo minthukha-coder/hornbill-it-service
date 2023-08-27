@@ -335,7 +335,7 @@ header {
   padding: 20px;
   height: 220px;
   margin-top: 50px;
-  border: 1px solid lightgray;
+  border: 1px solid var(--third-color);
   border-radius: 10px 10px 10px 10px;
   /* background-color:var(--fourth-color); */
   transition: 0.5s;
@@ -354,16 +354,16 @@ header {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-
-  background: linear-gradient(
+  background-color: var(--third-color);
+  /* background: linear-gradient(
     90deg,
     #ff7e7e 0%,
     var(--third-color) 50%,
     #000 60%
-  );
-  background-size: 200% 100%;
+  ); */
+  /* background-size: 200% 100%; */
   color: #fff;
-  transition: 0.3s ease-out;
+  /* transition: 0.3s ease-out; */
 }
 
 #our-services .card p {
@@ -373,10 +373,10 @@ header {
   transition: 0.5s;
 }
 
-#our-services .card:hover i {
+/* #our-services .card:hover i {
   color: #ff4848;
   background-position: right;
-}
+} */
 
 #our-services .card:hover {
   transform: translateY(-10px);
