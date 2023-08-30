@@ -225,7 +225,7 @@ header {
 }
 
 #about p {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: 18px;
 }
 
@@ -323,7 +323,7 @@ header {
 /* about end */
 
 /* Our Services */
-#our-services {
+/* #our-services {
   margin-bottom: 100px;
 }
 
@@ -335,7 +335,6 @@ header {
   padding: 20px;
   height: 220px;
   margin-top: 50px;
-  /* border: 1px solid var(--third-color); */
   border-radius: 10px 10px 10px 10px;
   background-color: var(--third-color);
   transition: 0.5s;
@@ -343,9 +342,9 @@ header {
 
 #our-services .card-body {
   transition: 0.5s;
-}
+} */
 
-#our-services .card i {
+/* #our-services .card i {
   display: block;
   margin: auto;
   text-align: center;
@@ -355,38 +354,45 @@ header {
   height: 80px;
   border-radius: 50%;
   border: 1px solid white;
-  /* background-color: var(--third-color); */
   background: transpartent;
-  /* background: linear-gradient(
-    90deg,
-    #ff7e7e 0%,
-    var(--third-color) 50%,
-    #000 60%
-  ); */
-  /* background-size: 200% 100%; */
   color: #fff;
-  /* transition: 0.3s ease-out; */
-}
+} */
 
-#our-services .card p {
+/* #our-services .card p {
   height: 0px;
   opacity: 0;
   font-size: 16px;
   transition: 0.5s;
-}
+} */
 
 /* #our-services .card:hover i {
   color: #ff4848;
   background-position: right;
 } */
-
+/* 
 #our-services .card:hover {
   transform: translateY(-10px);
 }
 
 #our-services .card:hover p {
   opacity: 1;
-  /* height: 30px; */
+  height: 30px;
+} */
+
+#our-services {
+  margin-bottom: 100px;
+}
+
+#our-services .icon i {
+  font-size: 27px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-right: 30px;
 }
 
 /* Services end */
@@ -819,32 +825,9 @@ header {
   #connect-content {
     width: 400px;
   }
-
-  /* #contact-us .form {
-    padding-top: 10px;
-    margin-left: 70px;
-  } */
 }
 
 @media (max-width: 1200px) {
-  /* #about #about-container {
-    display: flex;
-    flex-direction: column;
-  } */
-
-  /* #about #about-image {
-    margin: auto;
-  } */
-
-  /* #about #about-content {
-    margin: auto;
-  } */
-
-  #about #about-content h6,
-  h1 {
-    text-align: center;
-  }
-
   #about #about-image {
     padding-bottom: 20px;
   }
@@ -881,6 +864,11 @@ header {
 }
 
 @media (max-width: 1000px) {
+  #about #about-content h6,
+  h1 {
+    text-align: center;
+  }
+
   #contact-us #contact {
     width: 310px;
     height: 390px;
@@ -928,11 +916,6 @@ header {
     padding-top: 20%;
   }
 
-  /* #about #about-container .header {
-    display: flex;
-    justify-content: flex-start !important;
-  } */
-
   #about #about-image {
     padding-top: 50px;
   }
@@ -940,11 +923,7 @@ header {
   #about #about-content {
     margin: 80px 0;
   }
-  /* 
-  #about #about-content h6,
-  h1 {
-    text-align: center;
-  } */
+
 
   #about .circle {
     width: 60px;
