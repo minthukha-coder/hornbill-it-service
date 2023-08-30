@@ -380,7 +380,7 @@ header {
 } */
 
 #our-services {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 #our-services .icon i {
@@ -923,7 +923,6 @@ header {
   #about #about-content {
     margin: 80px 0;
   }
-
 
   #about .circle {
     width: 60px;
