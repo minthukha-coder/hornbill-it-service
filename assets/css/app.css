@@ -66,13 +66,17 @@ nav .container #navbar li:hover:after {
 /* header */
 
 header {
-  min-height: 90vh;
+  height: 83vh;
 }
 
 #header h2 {
   letter-spacing: 3px;
   font-size: 40px;
 }
+
+/* #header .row > * {
+  padding: 0;
+} */
 
 #header span {
   color: var(--third-color);
@@ -88,20 +92,6 @@ header {
   color: var(--second-color);
   font-size: 16px;
   letter-spacing: 1px;
-}
-
-#header .header-image1 {
-  width: 90px;
-  height: 106px;
-  object-fit: cover;
-  object-position: 40% 10%;
-  /* display: block; */
-}
-
-#header .header-image2 {
-  width: 165px;
-  height: 220px;
-  object-fit: cover;
 }
 
 #header a i {
@@ -125,22 +115,131 @@ header {
   overflow: hidden; */
 }
 
-/* #header #btn2::before {
-  content: "";
+#header #header-image .img-container {
   width: 100%;
   height: 100%;
-  background-color: #1ca3ec;
+}
+
+#header #header-image .img-container #header-image img {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transform: translateY(40px);
-  transition: 0.5s;
-} */
-/* 
-#header #btn2:hover::before {
-  transform: translateY(0px);
-} */
+  left: 30%;
+}
+
+#header .services h5 {
+  font-size: 17px;
+}
+
+#header .services.service-1 {
+  padding: 10px;
+  position: absolute;
+  left: 15%;
+  bottom: 30%;
+  width: 110px;
+  height: 160px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#header .services.service-1 img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--third-color);
+  border-radius: 8px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#header .services.service-2 {
+  padding: 10px;
+  position: absolute;
+  right: 100px;
+  bottom: 30%;
+  width: 160px;
+  height: 120px;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#header .services .img-container2 {
+  width: 100%;
+  height: 60%;
+}
+
+#header .services.service-3 {
+  padding: 10px;
+  position: absolute;
+  right: 20%;
+  bottom: 80px;
+  width: 250px;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#header .services.service-4 {
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  width: 270px;
+  height: 55px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+#header .services.service-4 .icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: var(--third-color);
+  border-radius: 5px;
+}
+
+#header .services.service-4 .icon i {
+  color: #fff;
+}
+
+#header .services img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .services .btn {
+  margin-top: 10px;
+  padding: 3px 13px;
+  background-color: var(--third-color);
+  border: none;
+}
+
+#header .services .btn2 {
+  width: 90px;
+  height: 35px;
+  line-height: 35px;
+  align-items: center;
+  background-color: var(--third-color);
+  border: none;
+  border-radius: 7px;
+}
+
+/* Icon Image */
+
+#header .services .advertising .images img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  margin: 0 3px;
+}
 
 #header #btn2:hover {
   color: var(--third-color);
@@ -319,65 +418,6 @@ header {
   font-size: 1rem;
   transform-origin: 0 66px;
 }
-
-/* about end */
-
-/* Our Services */
-/* #our-services {
-  margin-bottom: 100px;
-}
-
-#our-services .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  height: 220px;
-  margin-top: 50px;
-  border-radius: 10px 10px 10px 10px;
-  background-color: var(--third-color);
-  transition: 0.5s;
-}
-
-#our-services .card-body {
-  transition: 0.5s;
-} */
-
-/* #our-services .card i {
-  display: block;
-  margin: auto;
-  text-align: center;
-  line-height: 80px;
-  font-size: 40px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background: transpartent;
-  color: #fff;
-} */
-
-/* #our-services .card p {
-  height: 0px;
-  opacity: 0;
-  font-size: 16px;
-  transition: 0.5s;
-} */
-
-/* #our-services .card:hover i {
-  color: #ff4848;
-  background-position: right;
-} */
-/* 
-#our-services .card:hover {
-  transform: translateY(-10px);
-}
-
-#our-services .card:hover p {
-  opacity: 1;
-  height: 30px;
-} */
 
 #our-services {
   margin-bottom: 20px;
@@ -642,7 +682,8 @@ header {
 #contact-us #contact {
   padding: 40px;
   background-color: #fff;
-  width: 330px;
+  border-radius: 0 60px 0 0px;
+  width: 310px;
   height: 370px;
   margin: auto 0;
   animation: zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
@@ -667,10 +708,6 @@ header {
   position: absolute;
   bottom: 58%;
   left: -4%;
-}
-
-#contact-us #contact {
-  border-radius: 0 60px 0 0px;
 }
 
 #contact-us #contact h5 {
@@ -714,7 +751,6 @@ header {
   height: 500px;
   background: #fdc0a4;
   border-radius: 15px 0px 15px 65px;
-  /* z-index:-; */
 }
 
 #connect-content .input {
@@ -767,27 +803,6 @@ header {
   }
 }
 
-/* @keyframes zoomIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-} */
-
-@keyframes swing {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(8deg);
-  }
-}
-
 @keyframes floatImage {
   0% {
     transform: translateY(0);
@@ -802,76 +817,16 @@ header {
   }
 }
 
-@keyframes floatImage2 {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(30px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* Media Query */
-@media (max-width: 1400px) {
-  #our-services .card {
-    height: 240px;
-  }
-
-  #connect-content {
-    width: 400px;
-  }
-}
-
-@media (max-width: 1200px) {
-  #about #about-image {
-    padding-bottom: 20px;
-  }
-
-  #about #about-content .contact {
-    justify-content: center;
-  }
-
-  #contact-us #contact {
-    padding: 40px;
-    background-color: #fff;
-    width: 310px;
-    height: 370px;
-  }
-
-  .heading-line3 {
-    margin: auto;
-  }
-
-  .heading-line5 {
-    margin: 0 60px;
-  }
-
-  #our-services #cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5%;
-  }
-
-  #our-services #card {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-}
 
 @media (max-width: 1000px) {
+  #about {
+    padding-top: 30%;
+  }
+
   #about #about-content h6,
   h1 {
     text-align: center;
-  }
-
-  #contact-us #contact {
-    width: 310px;
-    height: 390px;
   }
 }
 
@@ -885,7 +840,7 @@ header {
     animation-play-state: paused;
   }
 
-  #connect-content {
+  #contact-us #connect-content {
     margin: auto;
   }
 }
@@ -900,28 +855,27 @@ header {
     letter-spacing: 11px !important;
   }
 
-  nav #btn {
-    margin-top: 5px;
+  #header .container svg {
+    position: absolute;
+    top: 50px !important;
   }
 
-  /* Header */
-
-  #header .container {
-    padding-top: 0 !important;
+  #header .services h5 {
+    font-size: 14px;
   }
 
   /* About */
 
   #about {
-    padding-top: 20%;
+    padding-top: 100%;
   }
 
   #about #about-image {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   #about #about-content {
-    margin: 80px 0;
+    margin: 30px 0;
   }
 
   #about .circle {
@@ -949,14 +903,6 @@ header {
   #about p {
     font-size: 18px;
     line-height: 30px;
-  }
-
-  .heading-line3 {
-    margin: auto;
-  }
-
-  .heading-line5 {
-    margin-bottom: 50px;
   }
 
   #about .content-line {
@@ -1053,17 +999,6 @@ header {
     padding: 5px;
   }
 
-  #contact-us #contact {
-    width: 280px;
-    height: 350px;
-    animation-play-state: paused;
-    margin: 30px auto;
-  }
-
-  #contact-us #connect-content {
-    margin: 30px auto;
-  }
-
   #contact-us .line-connect {
     width: 148px;
     height: 1.1px;
@@ -1116,6 +1051,17 @@ header {
     position: absolute;
     top: 15px;
     left: 15px;
+  }
+}
+@media (max-width: 450px) {
+  #header .services.service-2 {
+    position: absolute;
+    right: 0px;
+  }
+
+  #header .services.service-3 {
+    position: absolute;
+    right: -8px;
   }
 }
 
