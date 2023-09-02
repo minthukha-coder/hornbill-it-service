@@ -1,182 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hornbill IT Solutions & Services</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <!-- <link rel="stylesheet" href="assets/css/mtk.css"> -->
+    <!-- For Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- For Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hornbill IT Solutions & Services</title>
-  <link rel="stylesheet" href="assets/css/app.css">
-  <!-- <link rel="stylesheet" href="assets/css/mtk.css"> -->
-  <!-- For Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <!-- For Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Font Awesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
 
-  <!-- Font Awesone -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <div class="main">
+      <!-- Nav Section -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white py-1 sticky-top"
+      >
+        <div class="container">
+          <img
+            src="assets/images/logo2-removebg-preview.png"
+            style="width: 90px"
+            alt=""
+          />
+          <div class="ms-2">
+            <a
+              class="navbar-brand border-danger fs-2"
+              href="#header"
+              style="letter-spacing: 7px"
+              id="horn"
+              >Hornbill
+            </a>
+            <small id="small" class="d-block" style="font-size: 17px"
+              >IT Solutions & Services</small
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#myNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
+          <div
+            class="collapse navbar-collapse justify-content-end fs-5"
+            id="myNavbar"
+          >
+            <ul class="navbar-nav" id="navbar">
+              <li class="nav-item mx-2">
+                <a href="#header" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="#" class="nav-link">Courses</a>
+              </li>
 
-  <!-- Nav Section -->
-  <nav class=" navbar navbar-expand-lg navbar-light bg-white py-1 sticky-top">
-    <div class="container">
-      <img src="assets/images/logo2-removebg-preview.png" style="width:90px;" alt="">
-      <div class="ms-2">
-        <a class="navbar-brand border-danger fs-2 " href="#header" style="letter-spacing: 7px;" id = "horn">Hornbill </a>
-        <small id="small" class="d-block" style="font-size:17px;">IT Solutions & Services</small>
-      </div>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+              <li class="nav-item mx-2">
+                <a href="#our-services" class="nav-link">Services</a>
+              </li>
 
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav mx-auto " id="navbar">
-          <li class="nav-item mx-2">
-            <a href="#header" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="#testimonial" class="nav-link">Courses</a>
-          </li>
-
-          <li class="nav-item mx-2">
-            <a href="#our-services" class="nav-link">Services</a>
-          </li>
-
-          <li class="nav-item mx-2">
-            <a href="#Blogs" class="nav-link">Blogs</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav" id="btn-group">
-          <li class="nav-item mx-2">
-            <a href="#loginOffcanvas" data-bs-toggle="offcanvas"
-              class="nav-link rounded-2 px-4  mb-2" id="btn">Sign in</a>
-          </li>
-
-          <li class="nav-item mx-2">
-            <a href="#registerOffcanvas" data-bs-toggle="offcanvas"
-              class="nav-link border border-1 border-warning rounded-2 px-4 text-light" id="btn2">Sign Up</a>
-          </li>
-          <!-- <li class="nav-item mx-2">
-                        <a href="#registerOffcanvas" class="nav-link" data-bs-toggle="offcanvas" id="signup">Sign Up</a>
-                    </li> -->
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- Header Section -->
-  <header id="header">
-    <div class="container pt-5">
-      <div class="row pt-5">
-        <div class="col-lg-6 pt-5">
-          <h2 class="fw-bold" id="header-title">
-            Empower Your
-          </h2>
-          <h2><span class="multiple-text fw-bold fs-1">Business_</span></h2>
-          <h2 class="fw-bold">Website with HORNBILL</h2>
-          <p class="pt-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-            nemo error hic architecto corrupti dignissimos maiores minus
-            sapiente! Quasi voluptates architecto excepturi mollitia rerum id
-            vero qui aliquid illo ad.
-          </p>
-          <div class="d-flex">
-            <a href="#" class="text-light fw-bold me-3" id="btn1">Learn
-              More</a>
-            <a href="#" class="text-justify d-inline-block" id="btn2">Contact Us&nbsp;
-              <i class="bi bi-arrow-right fs-6"></i></a>
+              <li class="nav-item mx-2">
+                <a href="#Blogs" class="nav-link">Blogs</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-6 pt-5">
-          <div class="d-flex justify-content-center">
-            <div class="d-flex flex-column">
-              <img src="assets/images/header1.png" alt="" class="header-image1 mb-2 rounded-2" />
-              <img src="assets/images/header1.png" alt="" class="header-image1 rounded-2" />
-            </div>
-            <div class="">
-              <img src="assets/images/header2.jpg" alt="" class="header-image2 rounded-2 ps-2" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+      </nav>
 
-  <!-- About Section -->
-  <section id="about" class="">
-    <div class="container">
-      <div class="row" id="about-container">
-        <div class="col-lg-7 " id="about-image">
-          <div class="header d-flex justify-content-center">
-            <div class="image">
-              <div class="home-img">
-                <img src="assets/images/home.jpg" alt="">
-              </div>
-              <div class="sub-img">
-                <img src="assets/images/img1.jpg" alt="">
+      <!-- Header Section -->
+      <header id="header">
+        <div class="container pt-5">
+          <div class="row pt-5">
+            <div class="col-lg-6 pt-5">
+              <h2 class="fw-bold" id="header-title">Empower Your</h2>
+              <h2><span class="multiple-text fw-bold fs-1">Business_</span></h2>
+              <h2 class="fw-bold">Website with HORNBILL</h2>
+              <p class="pt-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+                nemo error hic architecto corrupti dignissimos maiores minus
+                sapiente! Quasi voluptates architecto excepturi mollitia rerum
+                id vero qui aliquid illo ad.
+              </p>
+              <div class="d-flex">
+                <a href="#" class="text-light fw-bold me-3" id="btn1"
+                  >Learn More</a
+                >
+                <a href="#" class="text-justify d-inline-block" id="btn2"
+                  >Contact Us&nbsp; <i class="bi bi-arrow-right fs-6"></i
+                ></a>
               </div>
             </div>
-            <div class="circle">
-              <i class="bi bi-play-circle-fill"></i>
-              <div class="text" id="text">
-                <p>Our Creative Design Services.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-        <div class=" col-lg-5 " id="about-content">
-          <h6 style="font-size:25px;" class="ms-2">About Hornbill</h6>
-          <div class="heading-line3 "></div>
-
-          <h1 class="py-4">Choose <span style="font-weight: bold;">The Best </span>IT Service Company</h1>
-
-          <div id="content" class="d-flex mb-4">
-            <div class="content-line mt-5"></div>
-            <p style="letter-spacing:1px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab eum aliquid
-              necessitatibus
-              maxime adipisci, obcaecati fugiat tempore, rem a sequi cumque, commodi rerum</p>
-          </div>
-
-          <hr>
-          <div class="contact d-flex justify-content-between">
-            <button class="border border-0 rounded-1 text-light mt-4 me-5" id="btn"><a href = "#" style = "text-decoration: none;color:white;">Contact Us <i class="bi bi-arrow-right"
-                style="font-size:20px;"></i></a></button>
-            <div class="d-flex " id="call-main">
-              <i class="bi bi-telephone-fill mt-3 me-2" id="phone-icon" style="font-size:25px;"></i>
-              <div class=" text-start" id="call-container">
-                <h5 class="call">Call for help</h5>
-                <h5 class="fw-bolder">09123456789</h5>
+            <div class="col-lg-6 pt-5">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                  <img
+                    src="assets/images/header1.png"
+                    alt=""
+                    class="header-image1 mb-2 rounded-2"
+                  />
+                  <img
+                    src="assets/images/header1.png"
+                    alt=""
+                    class="header-image1 rounded-2"
+                  />
+                </div>
+                <div class="">
+                  <img
+                    src="assets/images/header2.jpg"
+                    alt=""
+                    class="header-image2 rounded-2 ps-2"
+                  />
+                </div>
               </div>
             </div>
           </div>
-
-          <hr style="margin-top:30px;">
-
         </div>
-      </div>
-    </div>
-  </section>
+      </header>
 
-  <!-- Services Section -->
-  <section id="our-services">
+      <!-- About Section -->
+      <section id="about" class="">
+        <div class="container">
+          <div class="row" id="about-container">
+            <div class="col-lg-7 mx-auto" id="about-image">
+              <div
+                class="header d-flex justify-content-lg-center justify-content-md-center"
+              >
+                <div class="image">
+                  <div class="home-img">
+                    <img src="assets/images/home.jpg" alt="" />
+                  </div>
+                  <div class="sub-img">
+                    <img src="assets/images/img1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="circle">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <div class="text" id="text">
+                    <p>Our Creative Design Services.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 " id="about-content">
+              <h6 style="font-size: 25px" class="ms-3">About Hornbill</h6>
+              <div class = "col-lg-5 col-sm-12 text-left text-center">
+              <svg width="200" height="25" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+              </svg>
+              </div>
+
+              <h1 class="py-4">
+                Choose <span class = "fw-bold">The Best </span>IT
+                Service Company
+              </h1>
+
+              <div id="content" class="d-flex mb-4">
+                <!-- <div class="content-line mt-5"></div> -->
+                <p style="letter-spacing: 1px">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  eum aliquid necessitatibus maxime adipisci, obcaecati fugiat
+                  tempore, rem a sequi cumque, commodi rerum
+                </p>
+              </div>
+
+              <!-- <hr> -->
+              <div class="contact d-flex justify-content-between">
+                <!-- <button class="border border-0 rounded-1 text-light mt-4 me-5" id="btn"><a href = "#" style = "text-decoration: none;color:white;">Contact Us <i class="bi bi-arrow-right"
+                style="font-size:20px;"></i></a></button> -->
+                <div class="d-flex" id="call-main">
+                  <i
+                    class="bi bi-telephone-fill mt-3 me-2"
+                    id="phone-icon"
+                    style="font-size: 25px"
+                  ></i>
+                  <div class="text-start" id="call-container">
+                    <h5 class="call">Call for help</h5>
+                    <h5 class="fw-bolder">09123456789</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <hr style="margin-top:30px;"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <!-- <section id="our-services">
     <div class="container">
       <h4 class="text-center fs-1 fw-bolder" style="letter-spacing:2px;">Our Services</h4>
       <div class="heading-line5 mx-auto mt-4"></div>
@@ -185,8 +232,8 @@
           <div class="card">
             <div class="card-body text-center">
               <i class=" bi bi-suit-heart"></i>
-              <h5 class="text-center fw-bolder" style="margin-top:5%;">UI/ UX Design</h5>
-              <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+              <h5 class="text-center fw-bolder text-white" style="margin-top:5%;">UI/ UX Design</h5>
+              <p class="text-center mt-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing
               </p>
 
             </div>
@@ -197,8 +244,8 @@
           <div class="card">
             <div class="card-body text-center">
               <i class=" bi bi-suit-heart"></i>
-              <h5 class="text-center fw-bolder" style="margin-top:5%;">UI/ UX Design</h5>
-              <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+              <h5 class="text-center fw-bolder text-white" style="margin-top:5%;">UI/ UX Design</h5>
+              <p class="text-center mt-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing
               </p>
 
             </div>
@@ -209,8 +256,8 @@
           <div class="card">
             <div class="card-body text-center">
               <i class=" bi bi-suit-heart"></i>
-              <h5 class="text-center fw-bolder" style="margin-top:5%;">UI/ UX Design</h5>
-              <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+              <h5 class="text-center fw-bolder text-white" style="margin-top:5%;">UI/ UX Design</h5>
+              <p class="text-center mt-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing
               </p>
 
             </div>
@@ -220,375 +267,652 @@
         <div class="col-lg-3 col-md-6 ">
           <div class="card">
             <div class="card-body text-center">
-              <i class=" bi bi-suit-heart"></i>
-              <h5 class="text-center fw-bolder" style="margin-top:5%;">UI/ UX Design</h5>
-              <p class="text-center mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+              <i class=" bi bi-suit-heart "></i>
+              <h5 class="text-center fw-bolder text-white" style="margin-top:5%;">UI/ UX Design</h5>
+              <p class="text-center mt-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing
               </p>
 
             </div>
           </div>
         </div>
+
       </div>
-  </section>
+  </section> -->
 
-  <!-- Test Section -->
-  <section id="testimonial" class="container p-5 mb-5">
-    <div class="row">
-      <div class="col-md-5 text-center mb-3">
-        <h4 class="fw-bold">Testimonials</h4>
-        <div class="d-flex head-line justify-content-center">
-          <div class="heading-line7"></div>
-          <div class="heading-line8"></div>
-        </div>
-        <p class="fw-bold fs-5">See how are clients feel about us.</p>
-      </div>
-      <div class="col-md-7 d-flex justify-content-between align-items-center">
-        <div class="card border border-1 border-secondary py-4" style="width: 85%" id="main-card">
-          <div class="card-header border-0 bg-transparent">
-            <img src="assets/images/logo2-removebg-preview.png" alt=""
-              style="height: 60px; width: 60px; border-radius: 50%" class="img-fluid" />
-            <p>
-              Working with the PETRONG team has been a huge successful!
-              They're good people who care deeply about our bussiness!
-            </p>
+      <section id="our-services">
+        <div class="container">
+          <h4 class="text-center fs-1 fw-bold" style="letter-spacing:2px;">Our Services</h4>
+          <div class = "text-center mb-5">
+          <svg width="280" height="20" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+          </svg>
           </div>
-          <div class="card-body">
-            <h6>John Doe</h6>
-            <div class="d-flex justify-content-between">
-              <h6>CEO</h6>
-              <h6>Leonard Technologies</h6>
+
+
+          <div class = "row">
+            <div class = "col-md-6 d-flex justify-content-end mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="bi bi-rocket-takeoff-fill text-primary bg-primary bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
+            </div>
+            <div class = "col-md-6 d-flex justify-content-start mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="bi bi-shield-fill text-success bg-success bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
             </div>
           </div>
-        </div>
+          <div class = "row">
+            <div class = "col-md-6 d-flex justify-content-end mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="fa-solid fa-desktop text-warning bg-warning bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
+            </div>
+            <div class = "col-md-6 d-flex justify-content-start mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="fa-solid fa-tv text-primary bg-primary bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
+            </div>
+          </div>
+          <div class = "row">
+            <div class = "col-md-6 d-flex justify-content-end mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="bi bi-calendar-heart text-success bg-success bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
+            </div>
+            <div class = "col-md-6 d-flex justify-content-start mb-4 col-sm-12 justify-content-center">
+              <div class = "icon">
+                <i class="bi bi-bar-chart-fill text-warning bg-warning bg-opacity-10"></i>
+              </div>
+              <div class = "text w-50">
+                <h5 class = "fw-bold" style = "letter-spacing:1px;">Management & Marketing</h5>
+                <p style = "font-size:12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis vel</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="" style="width: 50px; padding-left: 70px">
-          <!-- <div class="border border-2 border-warning rounded-circle mb-3 text-warning fs-5" style="
+        </div>
+      </section>
+
+      <!-- Test Section -->
+      <section id="testimonial" class="p-5 mb-5">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 text-center mb-3">
+            <h4 class="fw-bold">Testimonials</h4>
+            <div class="d-flex head-line justify-content-center">
+              <svg width="250" height="20" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+              </svg>
+            </div>
+            <p class="fw-bold fs-5">See how are clients feel about us.</p>
+          </div>
+
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <!-- Swiper -->
+            <div class="box">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div
+                        class="card-header d-flex flex-column align-items-center"
+                      >
+                        <img
+                          src="assets/images/cute-girl-pose-2.jpg"
+                          alt=""
+                          class="customer-photo"
+                        />
+                        <p class="mt-3">
+                          Working with the PETRONG team has been a huge
+                          successful! They're good people who care deeply about
+                          our bussiness!
+                        </p>
+                      </div>
+
+                      <div class="card-body d-flex justify-content-between">
+                        <h6>John Doe</h6>
+                        <h6>CEO</h6>
+                        <h6>Leonard Technologies</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div
+                        class="card-header d-flex flex-column align-items-center"
+                      >
+                        <img
+                          src="assets/images/cute-girl-pose-2.jpg"
+                          alt=""
+                          class="customer-photo"
+                        />
+                        <p class="mt-3">
+                          Working with the PETRONG team has been a huge
+                          successful! They're good people who care deeply about
+                          our bussiness!
+                        </p>
+                      </div>
+
+                      <div class="card-body d-flex justify-content-between">
+                        <h6>John Doe</h6>
+                        <h6>CEO</h6>
+                        <h6>Leonard Technologies</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div
+                        class="card-header d-flex flex-column align-items-center"
+                      >
+                        <img
+                          src="assets/images/cute-girl-pose-2.jpg"
+                          alt=""
+                          class="customer-photo"
+                        />
+                        <p class="mt-3">
+                          Working with the PETRONG team has been a huge
+                          successful! They're good people who care deeply about
+                          our bussiness!
+                        </p>
+                      </div>
+
+                      <div class="card-body d-flex justify-content-between">
+                        <h6>John Doe</h6>
+                        <h6>CEO</h6>
+                        <h6>Leonard Technologies</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <div
+                        class="card-header d-flex flex-column align-items-center"
+                      >
+                        <img
+                          src="assets/images/cute-girl-pose-2.jpg"
+                          alt=""
+                          class="customer-photo"
+                        />
+                        <p class="mt-3">
+                          Working with the PETRONG team has been a huge
+                          successful! They're good people who care deeply about
+                          our bussiness!
+                        </p>
+                      </div>
+
+                      <div class="card-body d-flex justify-content-between">
+                        <h6>John Doe</h6>
+                        <h6>CEO</h6>
+                        <h6>Leonard Technologies</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shadow"></div>
+
+              <div class="button-box">
+                <div class="btn1">
+                  <div class="swiper-button-next"></div>
+                </div>
+                <div class="btn2">
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="card border  py-4" style="width: 85%" id="main-card">
+            <div class="card-header border-0 bg-transparent">
+              <img src="assets/images/logo2-removebg-preview.png" alt=""
+                style="height: 60px; width: 60px; border-radius: 50%" class="img-fluid" />
+              <p>
+                Working with the PETRONG team has been a huge successful!
+                They're good people who care deeply about our bussiness!
+              </p>
+            </div>
+            <div class="card-body">
+              <h6>John Doe</h6>
+              <div class="d-flex justify-content-between">
+                <h6>CEO</h6>
+                <h6>Leonard Technologies</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="" style="width: 50px; padding-left: 70px">
+            <div class="border border-2 border-warning rounded-circle mb-3 text-warning fs-5" style="
                   width: 45px;
                   height: 45px;
                   line-height: 45px;
                   text-align: center;
                 ">
-            <i class="bi bi-chevron-up"></i>
-          </div>
+              <i class="bi bi-chevron-up"></i>
+            </div>
 
-          <div class="bg-danger rounded-circle bg-black border-dark text-warning fs-5" style="
+            <div class="bg-danger rounded-circle bg-black border-dark text-warning fs-5" style="
                   width: 45px;
                   height: 45px;
                   line-height: 45px;
                   text-align: center;
                 ">
-            <i class="bi bi-chevron-down"></i>
+              <i class="bi bi-chevron-down"></i>
+            </div>
           </div> -->
-
-          <button class="btn mb-3 text-white " id = "btn">
-            <i class="bi bi-chevron-up"></i>
-          </button>
-
-          <button class="btn btn-dark text-white">
-            <i class="bi bi-chevron-down"></i>
-          </button>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container p-5">
-      <div class="row d-flex flex-sm-column-reverse flex-md-row" id="column">
-        <div class="col-lg-7">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item border-0 border-bottom">
-              <h2 class="accordion-header">
-                <button id="title" class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne">
-                  Lorem ipsum dolor sit amet?
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsa veniam neque, sed non consequuntur vero tenetur quis
-                    adipisci, a iusto rem et cum ex inventore. Soluta
-                    cupiditate eos laborum nesciunt.
-                  </p>
+      <!-- FAQ -->
+      <section id="faq">
+        <div class="container p-5">
+          <div
+            class="row d-flex flex-sm-column-reverse flex-md-row"
+            id="column"
+          >
+            <div class="col-lg-7">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item border-0 border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      id="title"
+                      class="accordion-button fw-bold fs-5"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Lorem ipsum dolor sit amet?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsa veniam neque, sed non consequuntur vero tenetur
+                        quis adipisci, a iusto rem et cum ex inventore. Soluta
+                        cupiditate eos laborum nesciunt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      id="title"
+                      class="accordion-button collapsed fw-bold fs-5"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Lorem ipsum dolor sit amet?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime velit totam in. Est voluptas laboriosam in minus
+                        rem similique recusandae at voluptates molestias! Vel a
+                        quas, illo tempore alias repudiandae.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      id="title"
+                      class="accordion-button collapsed fw-bold fs-5"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Lorem ipsum dolor sit amet?
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam, laudantium? Quia, neque saepe! Nisi fugiat
+                        provident eveniet iste a non rem sequi nobis tempore
+                        consequuntur consequatur quo, architecto voluptate
+                        aperiam?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="accordion-item border-0 border-bottom">
-              <h2 class="accordion-header">
-                <button id="title" class="accordion-button collapsed fw-bold fs-5" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo">
-                  Lorem ipsum dolor sit amet?
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime velit totam in. Est voluptas laboriosam in minus
-                    rem similique recusandae at voluptates molestias! Vel a
-                    quas, illo tempore alias repudiandae.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item border-0 border-bottom">
-              <h2 class="accordion-header">
-                <button id="title" class="accordion-button collapsed fw-bold fs-5" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree">
-                  Lorem ipsum dolor sit amet?
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quibusdam, laudantium? Quia, neque saepe! Nisi fugiat
-                    provident eveniet iste a non rem sequi nobis tempore
-                    consequuntur consequatur quo, architecto voluptate
-                    aperiam?
-                  </p>
-                </div>
+            <div id="faq-content" class="col-lg-5">
+              <div class="text-center pb-3">
+                <h4 class="mb-2 fw-bold">FAQ</h4>
+                <svg width="180" height="20" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+                </svg>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="faq-content" class="col-lg-5">
-          <div class="text-center pb-3">
-            <h4 class="mb-3 fw-bold">FAQ</h4>
-            <div class="heading-line6 mx-auto mb-3"></div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
+      </section>
+
+      <!-- Blog -->
+
+      <section id="Blogs" class="container p-5">
+        <h2 class="text-center fs-1">Latest Blogs</h2>
+        <div class="d-flex justify-content-center">
+          <svg class = " mb-5" width="300" height="20" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+          </svg>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 mb-5">
+              <div class="card-header border-0 bg-transparent p-0">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/blog1.avif"
+                    class="img-fluid rounded-0"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
+                <div class="sub-heading-line mb-3"></div>
+              </div>
 
-  <!-- Blog -->
-
-  <section id="Blogs" class="container p-5">
-    <h2 class="text-center fs-1">Latest Blogs</h2>
-    <div class="d-flex justify-content-center">
-      <div class="heading-line01"></div>
-      <div class="heading-line02"></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4">
-        <div class="card border-0 mb-5 ">
-          <div class="card-header border-0 bg-transparent p-0">
-            <div class="img-wrapper"><img src="assets/images/client test.png" class="img-fluid rounded-0" alt="" />
+              <div class="card-body p-0">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci
+                  inventore, doloribus, nemo quod laborum doloremque totam....
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    style="color: var(--third-color)"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
             </div>
-            <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
-            <div class="sub-heading-line mb-3"></div>
           </div>
-
-          <div class="card-body p-0">
-            <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
-              Architecto cupiditate sit quisquam, incidunt adipisci inventore,
-              doloribus, nemo quod laborum doloremque totam....
-              <a href="#" class="text-decoration-none" style = "color:var(--third-color);">Read more</a>
-            </p>
-          </div>
-          <div class="card-footer border-0 bg-transparent d-flex">
-            <p class="me-3">Aug 15,2023</p>
-            <p class="me-3">|</p>
-            <p>5 min read</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="card border-0 mb-5">
-          <div class="card-header border-0 bg-transparent p-0">
-            <div class="img-wrapper">
-              <img src="assets/images/client test.png" class="img-fluid rounded-0" alt="" />
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 mb-5">
+              <div class="card-header border-0 bg-transparent p-0">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/blog2.avif"
+                    class="img-fluid rounded-0"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
+                <div class="sub-heading-line mb-3"></div>
+              </div>
+              <div class="card-body p-0">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci
+                  inventore, doloribus, nemo quod laborum doloremque totam....
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    style="color: var(--third-color)"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
             </div>
-            <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
-            <div class="sub-heading-line mb-3"></div>
           </div>
-          <div class="card-body p-0">
-            <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
-              Architecto cupiditate sit quisquam, incidunt adipisci inventore,
-              doloribus, nemo quod laborum doloremque totam....
-              <a href="#" class="text-decoration-none" style = "color:var(--third-color);">Read more</a>
-            </p>
-          </div>
-          <div class="card-footer border-0 bg-transparent d-flex">
-            <p class="me-3">Aug 15,2023</p>
-            <p class="me-3">|</p>
-            <p>5 min read</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 ">
-        <div class="card border-0">
-          <div class="card-header border-0 bg-transparent p-0">
-            <div class="img-wrapper">
-              <img src="assets/images/client test.png" class="img-fluid rounded-0" alt="" />
-            </div>
-            <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
-            <div class="sub-heading-line mb-3"></div>
-          </div>
-          <div class="card-body p-0">
-            <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
-              Architecto cupiditate sit quisquam, incidunt adipisci inventore,
-              doloribus, nemo quod laborum doloremque totam....
-              <a href="#" class="text-decoration-none" style = "color:var(--third-color);">Read more</a>
-            </p>
-          </div>
-          <div class="card-footer border-0 bg-transparent d-flex">
-            <p class="me-3">Aug 15,2023</p>
-            <p class="me-3">|</p>
-            <p>5 min read</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact-us" class="mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4  ">
-          <h5 class="text-center fw-bolder my-3" style="font-size:25px;letter-spacing: 2px;">Contact Us</h5>
-          <div class="heading-line3 mb-2 mx-auto "></div>
-          <p class="text-center fw-bold mx-auto">Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="col-lg-4  " id="contact">
-          <div class="d-flex " id="content">
-            <i class="bi bi-buildings me-3 " id="building-icon" style = "color:var(--third-color);"></i>
-            <div class="ms-2 ">
-              <h5 class="fw-bold ">Pay us a visit</h5>
-              <h6>471, Alagbado off ijaye ojokoro Inner Street Long Road,<br> Lagos Nigeria</h6>
-            </div>
-
-            <div class="line-connect"></div>
-
-          </div>
-
-
-
-          <div class="d-flex mt-5">
-            <i class="bi bi-telephone-fill me-3" id="icon2"></i>
-            <div class="ms-2 ">
-              <h5 class="fw-bold ">Or drop us a line</h5>
-              <h6>hornbillservice@gmail.com</h6>
-              <h6 class="mt-2" style="line-height:50px;">+234 810 7586 941</h6>
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0">
+              <div class="card-header border-0 bg-transparent p-0">
+                <div class="img-wrapper">
+                  <img
+                    src="assets/images/blog3.avif"
+                    class="img-fluid rounded-0"
+                    alt=""
+                  />
+                </div>
+                <h4 class="card-title text-uppercase fs-5 mt-3">Web Design</h4>
+                <div class="sub-heading-line mb-3"></div>
+              </div>
+              <div class="card-body p-0">
+                <h4 class="mb-3 fw-bold">Lorem ipsum dolor sit</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veritatis iste deserunt culpa eveniet dolor vitae quo facere?
+                  Architecto cupiditate sit quisquam, incidunt adipisci
+                  inventore, doloribus, nemo quod laborum doloremque totam....
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    style="color: var(--third-color)"
+                    >Read more</a
+                  >
+                </p>
+              </div>
+              <div class="card-footer border-0 bg-transparent d-flex">
+                <p class="me-3">Aug 15,2023</p>
+                <p class="me-3">|</p>
+                <p>5 min read</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4  " id="connect-content">
-          <h5 class="text-center mt-3 fw-bolder " style="font-size:25px;letter-spacing:1px;">Connect with us</h5>
-          <div class="form">
-            <div class="">
-              <label for="" class="d-block mt-3 fw-bolder">Name</label>
-              <input type="text" class="input ">
-              <label for="" class="fw-bolder">Email Address</label>
-              <input type="text" class="input">
-              <label for="" class="fw-bolder">Your Message</label>
-              <input type="text" class="input">
+      </section>
 
-              <button class="btn" id="btn"><a href = "#" style = "text-decoration: none;color:white;">Submit</a></button>
+      <!-- Contact -->
+      <section id="contact-us" class="mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5
+                class="text-center fw-bolder my-3"
+                style="font-size: 25px; letter-spacing: 2px"
+              >
+                Contact Us
+              </h5>
+              <svg style = "display:block;margin:auto;" width="200" height="20" viewBox="0 0 569 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M568.03 12.4297C567.609 11.9429 567.087 11.5482 566.497 11.2717C566.288 11.172 566.072 11.0856 565.851 11.013C565.484 10.8899 565.319 10.8529 565.078 10.7913L564.014 10.5819C563.368 10.471 562.748 10.3971 562.203 10.3355C561.037 10.2 559.922 10.0891 558.808 10.0029C554.361 9.67028 549.94 9.51012 545.607 9.41157C538.487 9.28017 531.372 9.33356 524.261 9.57172C524.315 8.80278 524.116 8.03695 523.693 7.38559C523.269 6.73422 522.642 6.23129 521.904 5.94998C521.575 5.80805 521.231 5.70071 520.878 5.62972C520.255 5.5141 519.624 5.43999 518.991 5.40795C517.965 5.40795 517.04 5.34637 516.128 5.34637C512.479 5.34637 508.957 5.45724 505.423 5.54348C498.367 5.74058 491.348 5.90072 484.355 5.8884H476.513C473.752 5.8884 471.003 5.8884 468.292 5.8884H467.646H461.641C461.121 4.89058 460.729 4.13911 460.437 3.59708C492.286 0.763747 457.599 -0.0985522 342.038 0.344926C315.599 0.443477 287.564 0.344918 260.567 0.22173L145.285 0H113.905L83.5006 0.172444H79.8015C78.5346 0.172444 77.4071 0.172453 76.0009 0.258685H75.6462H75.2408C75.0635 0.480424 75.7602 -0.320302 73.1252 1.21955C71.5796 2.69781 70.5915 4.91522 73.6193 7.66232C76.381 8.77101 74.5314 7.9949 75.2155 8.2536H75.4689H75.7222H76.0516H77.0651H78.9146L81.651 8.31522C81.3779 8.79818 81.1774 9.31675 81.0556 9.85507C80.9519 10.4048 80.9519 10.9684 81.0556 11.5181H70.0087C68.5519 11.5181 67.1203 11.5181 65.5621 11.6043L64.2953 11.6783L63.4465 11.7891C63.1847 11.8325 62.9264 11.8942 62.6737 11.9739C62.4964 11.6906 59.1899 15.2138 59.8107 15.9899C59.8107 16.1007 59.8107 16.187 59.8107 16.2978H35.4873L25.2385 16.1254L19.4744 15.9529C16.2946 15.8543 13.1401 15.7558 9.79567 15.7681C8.94689 15.7681 8.13611 15.7681 7.26199 15.8543C6.80592 15.8543 6.40053 15.8543 5.89379 15.9529C5.38706 16.0514 5.24772 16.0145 4.88033 16.0761L4.29758 16.1869L3.82885 16.2855C3.62984 16.3265 3.43486 16.3842 3.2461 16.4579C2.66195 16.6684 2.11168 16.9587 1.61188 17.3203C0.981564 17.7765 0.501687 18.4015 0.231002 19.1188C-0.947163 22.4326 2.76469 24.5761 2.76469 24.1203C3.09529 24.2398 3.44006 24.3185 3.79085 24.3543L4.33558 24.4159C5.46307 24.4775 6.19785 24.4159 7.03396 24.4159C10.2517 24.4159 13.3682 24.3174 16.5099 24.3297H21.2226H22.1727C26.9487 24.4898 31.37 24.613 35.2972 24.5884H48.0924C48.9285 24.5884 49.8153 24.5884 50.7907 24.5884H56.3775L89.9995 24.8348L126.877 25.0811H129.107H130.247H126.269H119.783H41.1754L37.3115 25.1428H36.8174H36.4501C33.435 24.8841 34.6638 28.321 38.5404 28.2717H38.8951C40.1619 28.3456 41.2134 28.358 42.3282 28.3703H48.8651L75.0001 28.5674L127.257 28.6783L198.277 28.5551C197.795 34.2956 201.038 32.4724 200.266 33.0514C200.447 33.1186 200.633 33.1721 200.823 33.2116L201.241 33.2978C201.646 33.3594 201.874 33.3717 202.128 33.3964L203.496 33.4826C205.232 33.5811 206.879 33.6304 208.563 33.6797C215.176 33.8645 221.561 33.9384 227.769 34H245.847C269.195 34 289.515 33.8768 306.3 33.6181C322.199 33.3841 334.918 33.0268 344.027 32.5833H378.067C404.557 32.4848 430.996 32.9159 457.511 33.2609L497.29 33.7167C510.566 33.8152 523.805 33.9384 537.221 33.5812C538.906 33.5812 540.59 33.4579 542.288 33.3594C544.125 33.2776 545.957 33.0967 547.773 32.8174C548.089 32.763 548.402 32.6931 548.711 32.608C548.926 32.559 549.137 32.4973 549.344 32.4232C549.718 32.2915 550.078 32.1265 550.421 31.9304C550.7 31.5732 552.22 31.4377 552.727 28.1362C552.397 25.1427 550.687 24.3543 550.497 24.2558C549.971 23.9279 549.393 23.6865 548.787 23.5413C548.226 23.3801 547.655 23.2566 547.077 23.1717C546.595 23.0978 546.127 23.0239 545.683 22.9746C543.872 22.7529 542.187 22.6297 540.489 22.5065C533.737 22.063 527.099 21.8659 520.435 21.6688H517.813C517.737 20.7572 517.648 19.9812 517.547 19.3283H530.126H544.34C549.053 19.3283 553.829 19.3898 558.694 19.242C559.808 19.242 560.923 19.1558 562.089 19.0819L563.926 18.9094C564.268 18.9094 564.622 18.8108 565.066 18.7246L565.471 18.6261C565.666 18.5862 565.857 18.5285 566.041 18.4536C566.495 18.2987 566.922 18.0786 567.308 17.8007C567.853 18.4782 570.349 14.5855 568.0312.4297Z" fill="#fe4d00"/>
+              </svg>
+              <p class="text-center fw-bold mx-auto">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="col-lg-4" id="contact">
+              <div class="d-flex" id="content">
+                <i
+                  class="bi bi-buildings me-3"
+                  id="building-icon"
+                  style="color: var(--third-color)"
+                ></i>
+                <div class="ms-2">
+                  <h5 class="fw-bold">Pay us a visit</h5>
+                  <h6>
+                    471, Alagbado off ijaye ojokoro Inner Street Long Road,<br />
+                    Lagos Nigeria
+                  </h6>
+                </div>
+
+                <div class="line-connect"></div>
+              </div>
+
+              <div class="d-flex mt-5">
+                <i class="bi bi-telephone-fill me-3" id="icon2"></i>
+                <div class="ms-2">
+                  <h5 class="fw-bold">Or drop us a line</h5>
+                  <h6>hornbillservice@gmail.com</h6>
+                  <h6 class="mt-2" style="line-height: 50px">
+                    +234 810 7586 941
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4" id="connect-content">
+              <h5
+                class="text-center mt-3 fw-bolder"
+                style="font-size: 25px; letter-spacing: 1px"
+              >
+                Connect with us
+              </h5>
+              <div class="form">
+                <div class="">
+                  <label for="" class="d-block mt-3 fw-bolder">Name</label>
+                  <input type="text" class="input" />
+                  <label for="" class="fw-bolder">Email Address</label>
+                  <input type="text" class="input" />
+                  <label for="" class="fw-bolder">Your Message</label>
+                  <input type="text" class="input" />
+
+                  <button class="btn" id="btn">
+                    <a href="#" style="text-decoration: none; color: white"
+                      >Submit</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Footer -->
+      <!-- Footer -->
 
-  <section id="footer">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col-lg-6 text-md-start text-sm-center pb-3 middle">
-          <img src="assets/images/logo1.jpg" alt="" class="img-fluid mb-2" style="width: 80px" />
-          <h4 class="fw-bold">Hornbill</h4>
-          <p>We growing up your business to the international scale.</p>
-        </div>
-        <div class="col-lg-6 d-flex justify-content-around lh-lg flex-column flex-md-row middle">
-          <div class="pb-3 text-md-start text-sm-center">
-            <h6 class="fw-bolder" style="letter-spacing: 2px">COMPANY</h6>
-            <ul class="list-unstyled" id="link">
-              <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#our-services">Services</a></li>
-            </ul>
+      <section id="footer">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-lg-6 text-md-start text-sm-center pb-3 middle">
+              <img
+                src="assets/images/logo1.jpg"
+                alt=""
+                class="img-fluid mb-2"
+                style="width: 80px"
+              />
+              <h4 class="fw-bold">Hornbill</h4>
+              <p>We growing up your business to the international scale.</p>
+            </div>
+            <div
+              class="col-lg-6 d-flex justify-content-around lh-lg flex-column flex-md-row middle"
+            >
+              <div class="pb-3 text-md-start text-sm-center">
+                <h6 class="fw-bolder" style="letter-spacing: 2px">COMPANY</h6>
+                <ul class="list-unstyled" id="link">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#our-services">Services</a></li>
+                </ul>
+              </div>
+              <div class="pb-3 text-md-start text-sm-center">
+                <h6 class="fw-bolder" style="letter-spacing: 2px">RESOURCES</h6>
+                <ul class="list-unstyled">
+                  <li>Documentation</li>
+                  <li>Papers</li>
+                  <li>Press Conferences</li>
+                </ul>
+              </div>
+              <div class="pb-3 text-md-start text-sm-center">
+                <h6 class="fw-bolder" style="letter-spacing: 2px">LEGAL</h6>
+                <ul class="list-unstyled">
+                  <li>Terms of Service</li>
+                  <li>Privacy Policy</li>
+                  <li>Cookies Policy</li>
+                  <li>Data Processing</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="pb-3 text-md-start text-sm-center">
-            <h6 class="fw-bolder" style="letter-spacing: 2px">RESOURCES</h6>
-            <ul class="list-unstyled">
-              <li>Documentation</li>
-              <li>Papers</li>
-              <li>Press Conferences</li>
-            </ul>
+          <div class="border border-black" style="width: 100%"></div>
+        </div>
+      </section>
+
+      <!-- Footer Copy -->
+      <footer>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-lg-6 text-md-start text-sm-center middle">
+              <p>&copy;2023 All rights reserved.</p>
+            </div>
+            <div
+              class="col-lg-6 d-flex justify-content-md-end justify-content-sm-center icons pb-4"
+            >
+              <a href="#" class="text-black fs-5 pe-4"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-black fs-5 pe-4"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-black fs-5"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
           </div>
-          <div class="pb-3 text-md-start text-sm-center">
-            <h6 class="fw-bolder" style="letter-spacing: 2px">LEGAL</h6>
-            <ul class="list-unstyled">
-              <li>Terms of Service</li>
-              <li>Privacy Policy</li>
-              <li>Cookies Policy</li>
-              <li>Data Processing</li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <div class="border border-black" style="width: 100%"></div>
+      </footer>
     </div>
-  </section>
 
-  <!-- Footer Copy -->
-  <footer>
-    <div class="container mt-4">
-      <div class="row">
-        <div class="col-lg-6 text-md-start text-sm-center middle">
-          <p>&copy;2023 All rights reserved.</p>
-        </div>
-        <div class="col-lg-6 d-flex justify-content-md-end justify-content-sm-center icons">
-          <a href="#" class="text-black fs-5 pe-4"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <a href="#" class="text-black fs-5 pe-4"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="#" class="text-black fs-5"
-            ><i class="bi bi-youtube"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
 
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-
-
-  <script src="assets/js/app.js"></script>
-</body>
-
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
