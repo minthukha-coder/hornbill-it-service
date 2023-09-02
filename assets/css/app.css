@@ -65,7 +65,7 @@ nav .container #navbar li:hover:after {
 
 /* header */
 
-header {
+#header {
   height: 83vh;
 }
 
@@ -251,6 +251,7 @@ header {
 /* about */
 
 #about {
+  margin-top: 80px;
   margin-bottom: 80px;
 }
 
@@ -510,7 +511,7 @@ header {
   transform: rotate(-90deg);
   top: -20px;
   left: 10px;
-  background-color: orange;
+  background-color: var(--third-color);
   color: #fff;
 }
 
@@ -518,7 +519,7 @@ header {
   transform: rotate(-90deg);
   top: 50px;
   left: 10px;
-  background-color: black;
+  background-color: var(--third-color);
   color: white;
 }
 /* Test End */
@@ -754,8 +755,8 @@ header {
 /* Media Query */
 
 @media (max-width: 1000px) {
-  #about {
-    padding-top: 30%;
+  #header {
+    margin-bottom: 250px;
   }
 
   #about #about-content h6,
@@ -789,6 +790,10 @@ header {
     letter-spacing: 11px !important;
   }
 
+  #header {
+    margin-bottom: 320px;
+  }
+
   #header .container svg {
     position: absolute;
     top: 50px !important;
@@ -799,11 +804,6 @@ header {
   }
 
   /* About */
-
-  #about {
-    padding-top: 100%;
-  }
-
   #about #about-image {
     padding-top: 150px;
   }
@@ -870,14 +870,6 @@ header {
   #contact-us #icon2 {
     height: 40px;
     padding: 5px;
-  }
-
-  #contact-us .line-connect {
-    width: 148px;
-    height: 1.1px;
-    position: absolute;
-    bottom: 55%;
-    left: -6%;
   }
 
   #connect-content {
