@@ -397,7 +397,7 @@ nav .container #navbar li:hover:after {
   margin-right: 30px;
 }
 
-/* Services end */
+/* Our Services end */
 
 /* Testimonail Section  */
 #testimonial .box {
@@ -454,7 +454,6 @@ nav .container #navbar li:hover:after {
 }
 
 #testimonial .control-btns {
-  /* border: 2px solid yellow; */
   position: absolute;
   right: 50px;
   top: 50%;
@@ -498,6 +497,18 @@ nav .container #navbar li:hover:after {
   left: 3%;
   bottom: 16%;
   z-index: -2;
+}
+
+#testimonial #circle2 {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+}
+
+#testimonial #circle3 {
+  position: absolute;
+  top: 50%;
+  left: 20%;
 }
 
 #testimonial #square {
@@ -856,10 +867,23 @@ nav .container #navbar li:hover:after {
 
   /* Services */
 
+  /* For Svg */
   #our-services #circle {
     position: absolute;
     left: 15%;
     top: 1%;
+  }
+
+  #our-services #circle2 {
+    position: absolute;
+    left: 30%;
+    top: 8%;
+  }
+
+  #our-services #circle3 {
+    position: absolute;
+    /* left: 30%; */
+    bottom: 0%;
   }
 
   /* Testimonial */
@@ -869,6 +893,18 @@ nav .container #navbar li:hover:after {
     position: absolute;
     top: 30px;
     right: -20px;
+  }
+
+  #testimonial #circle2 {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+  }
+
+  #testimonial #circle3 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
   }
 
   /* Contact */
