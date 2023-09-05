@@ -66,17 +66,13 @@ nav .container #navbar li:hover:after {
 /* header */
 
 #header {
-  height: 81vh;
+  height: 82vh;
 }
 
 #header h2 {
   letter-spacing: 3px;
   font-size: 40px;
 }
-
-/* #header .row > * {
-  padding: 0;
-} */
 
 #header span {
   color: var(--third-color);
@@ -111,8 +107,6 @@ nav .container #navbar li:hover:after {
   padding: 6px 20px;
   border-radius: 4px;
   border: 1px solid transparent;
-  /* border: 1px solid var(--third-color);
-  overflow: hidden; */
 }
 
 #header #header-image .img-container {
@@ -249,10 +243,8 @@ nav .container #navbar li:hover:after {
 /* header end */
 
 /* about */
-
 #about {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 #about span {
@@ -277,7 +269,6 @@ nav .container #navbar li:hover:after {
 }
 
 #about p {
-  /* margin-left: 50px; */
   font-size: 18px;
 }
 
@@ -426,7 +417,6 @@ nav .container #navbar li:hover:after {
   bottom: 0;
   margin: auto;
   border: none;
-  /* overflow: hidden; */
   padding: 10px;
   z-index: 1;
 }
@@ -595,9 +585,7 @@ nav .container #navbar li:hover:after {
 #Blogs .sub-heading-line {
   width: 60px;
   height: 3px;
-  /* margin: left; */
   background-color: var(--third-color);
-  /* margin-bottom: 15px; */
 }
 #Blogs .card-header p {
   text-align: justify;
@@ -793,7 +781,7 @@ nav .container #navbar li:hover:after {
   }
 
   #header {
-    margin-bottom: 380px;
+    margin-bottom: 420px;
   }
 
   #header .container svg {
@@ -807,7 +795,7 @@ nav .container #navbar li:hover:after {
 
   /* About */
   #about #about-image {
-    padding-top: 150px;
+    padding-top: 0;
   }
 
   #about #about-content {
@@ -882,7 +870,6 @@ nav .container #navbar li:hover:after {
 
   #our-services #circle3 {
     position: absolute;
-    /* left: 30%; */
     bottom: 0%;
   }
 
@@ -941,9 +928,12 @@ nav .container #navbar li:hover:after {
 }
 
 @media (max-width: 576px) {
+  /* FAQ */
   #faq #column {
     flex-direction: column-reverse;
   }
+
+  /* Footer */
 
   #footer .middle {
     text-align: center;
@@ -959,6 +949,7 @@ nav .container #navbar li:hover:after {
 }
 
 @media (max-width: 450px) {
+  /* Header*/
   #header .services.service-2 {
     position: absolute;
     right: 0px;
@@ -967,5 +958,15 @@ nav .container #navbar li:hover:after {
   #header .services.service-3 {
     position: absolute;
     right: -8px;
+  }
+
+  /* About */
+
+  #about {
+    margin-bottom: 60px;
+  }
+
+  #about #about-image {
+    padding-top: 80px;
   }
 }
