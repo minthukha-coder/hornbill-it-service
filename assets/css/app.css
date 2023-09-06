@@ -66,7 +66,7 @@ nav .container #navbar li:hover:after {
 /* header */
 
 #header {
-  height: 82vh;
+  height: 80vh;
 }
 
 #header h2 {
@@ -493,7 +493,7 @@ nav .container #navbar li:hover:after {
 #testimonial #circle2 {
   position: absolute;
   top: 10%;
-  left: 8%;
+  left: 3%;
 }
 
 #testimonial #circle3 {
@@ -675,18 +675,17 @@ nav .container #navbar li:hover:after {
   margin-left: -80px;
   width: 400px;
   height: 500px;
-  background: #fff9e6;
-
+  background: #fec681;
   border-radius: 15px 0px 15px 65px;
 }
 
 #connect-content .input {
   width: 90%;
-  padding: 10px 20px;
+  padding: 10px 0px;
   border: 0;
   border-bottom: 1px solid #000;
   margin-bottom: 30px;
-  background: #fff9e6;
+  background: #fec681;
 }
 
 #connect-content .input:focus {
@@ -749,6 +748,11 @@ nav .container #navbar li:hover:after {
 @media (max-width: 995px) {
   #header {
     margin-bottom: 250px;
+  }
+
+  #about #about-svg {
+    margin: auto;
+    text-align: center;
   }
 
   #about #about-content h6,
