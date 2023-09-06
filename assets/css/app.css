@@ -244,6 +244,7 @@ nav .container #navbar li:hover:after {
 
 /* about */
 #about {
+  margin-top: 40px;
   margin-bottom: 100px;
 }
 
@@ -674,7 +675,8 @@ nav .container #navbar li:hover:after {
   margin-left: -80px;
   width: 400px;
   height: 500px;
-  background: #fdc0a4;
+  background: #fff9e6;
+
   border-radius: 15px 0px 15px 65px;
 }
 
@@ -684,7 +686,7 @@ nav .container #navbar li:hover:after {
   border: 0;
   border-bottom: 1px solid #000;
   margin-bottom: 30px;
-  background: #fdc0a4;
+  background: #fff9e6;
 }
 
 #connect-content .input:focus {
@@ -744,7 +746,7 @@ nav .container #navbar li:hover:after {
 
 /* Media Query */
 
-@media (max-width: 1000px) {
+@media (max-width: 995px) {
   #header {
     margin-bottom: 250px;
   }
