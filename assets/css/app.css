@@ -96,16 +96,16 @@ nav .container #navbar li:hover:after {
 
 #header #btn1 {
   background-color: var(--third-color);
-  padding: 8px 20px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 #header #btn2 {
   position: relative;
   color: var(--third-color);
   transition: 0.5s;
-  padding: 6px 20px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 20px;
   border: 1px solid transparent;
 }
 
