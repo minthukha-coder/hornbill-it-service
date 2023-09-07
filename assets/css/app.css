@@ -719,7 +719,7 @@ nav .container #navbar li:hover:after {
 }
 
 /* Footer Start */
-#footer #link a {
+#footer a {
   text-decoration: none;
   color: var(--second-color);
 }
