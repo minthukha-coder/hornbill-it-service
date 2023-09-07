@@ -132,6 +132,7 @@ nav .container #navbar li:hover:after {
   height: 160px;
   text-align: center;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   z-index: 1;
 }
@@ -148,13 +149,14 @@ nav .container #navbar li:hover:after {
 #header .services.service-2 {
   padding: 10px;
   position: absolute;
-  right: 100px;
-  bottom: 30%;
-  width: 160px;
-  height: 120px;
+  right: 60px;
+  bottom: 35%;
+  width: 180px;
+  height: 100px;
   text-align: center;
   align-items: center;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   z-index: 1;
   overflow: hidden;
@@ -162,7 +164,7 @@ nav .container #navbar li:hover:after {
 
 #header .services .img-container2 {
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 
 #header .services.service-3 {
@@ -171,16 +173,17 @@ nav .container #navbar li:hover:after {
   right: 20%;
   bottom: 80px;
   width: 250px;
-  height: 55px;
+  height: 60px;
   text-align: center;
   align-items: center;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   z-index: 1;
 }
 
 #header .services.service-4 {
-  padding: 10px;
+  padding: 12px;
   position: absolute;
   left: 20px;
   bottom: 10px;
@@ -188,6 +191,7 @@ nav .container #navbar li:hover:after {
   height: 55px;
   text-align: center;
   background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 8px;
   z-index: 1;
 }
@@ -211,7 +215,7 @@ nav .container #navbar li:hover:after {
 
 #header .services .btn {
   margin-top: 10px;
-  padding: 3px 13px;
+  padding: 2px 13px;
   background-color: var(--third-color);
   border: none;
 }
@@ -232,7 +236,7 @@ nav .container #navbar li:hover:after {
   width: 25px;
   height: 25px;
   object-fit: cover;
-  margin: 0 3px;
+  margin: 0 1px;
 }
 
 #header #btn2:hover {
@@ -286,9 +290,9 @@ nav .container #navbar li:hover:after {
 }
 
 #about #call-main #phone-icon {
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   color: var(--third-color);
   background-color: #fff;
@@ -574,12 +578,14 @@ nav .container #navbar li:hover:after {
   width: 100%;
   height: 100%;
   margin-bottom: 15px;
+
   object-fit: cover;
   transition: 0.5s;
 }
 #Blogs .card img:hover {
   transform: scale(1.1);
 }
+
 #Blog.card-header {
   background-color: none;
 }
@@ -675,7 +681,7 @@ nav .container #navbar li:hover:after {
   margin-left: -80px;
   width: 400px;
   height: 500px;
-  background: #fec681;
+  background-color: #fcd6a9;
   border-radius: 15px 0px 15px 65px;
 }
 
@@ -685,7 +691,7 @@ nav .container #navbar li:hover:after {
   border: 0;
   border-bottom: 1px solid #000;
   margin-bottom: 30px;
-  background: #fec681;
+  background-color: #fcd6a9;
 }
 
 #connect-content .input:focus {
@@ -954,6 +960,11 @@ nav .container #navbar li:hover:after {
   }
 }
 
+@media (max-width: 500px) {
+  #about #about-image {
+    padding-top: 80px;
+  }
+}
 @media (max-width: 450px) {
   /* Header*/
   #header .services.service-2 {
